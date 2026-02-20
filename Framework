@@ -1,0 +1,50 @@
+graph TD
+    %% Global Orchestrator
+    subgraph "Consensus & Ethics Hub (15 Agents)"
+        CM[Consensus Manager]
+        EA[Epistemic Auditor]
+        BM[Branching Logic Controller]
+    end
+
+    %% Discovery Layer
+    subgraph "Discovery Core (20 Agents)"
+        GEN[Genetics Group]
+        PROT[Proteomics Group]
+        GEN -- "CLDN5/C4-A Markers" --> PROT
+    end
+
+    %% Diagnostic Layer
+    subgraph "Diagnostic Bridge (15 Agents)"
+        MRI[DCE-MRI Simulation]
+        BIO[Fluid Biomarkers]
+        MRI -- "Ktrans > 0.05" --> BIO
+    end
+
+    %% Clinical Feedback
+    subgraph "Retro-Engineering (10 Agents)"
+        DRUG[Drug-B Affinity Mapping]
+        OUT[Outlier Success Tracer]
+    end
+
+    %% Human Layer
+    subgraph "Lived Experience (10 Agents)"
+        NAR[JSON Narrative Database]
+        PP[Patient Pheno-phenotype]
+    end
+
+    %% Logic Flow
+    PROT --> MRI
+    BIO --> CM
+    DRUG --> CM
+    NAR --> EA
+    
+    %% Branching Decisions
+    CM -- "Conflict Detected" --> EA
+    EA -- "Epistemic Veto" --> BM
+    
+    BM -- "Alignment Path" --> Alpha[Branch Alpha: Clinical Pathology]
+    BM -- "Divergence Path" --> Beta[Branch Beta: Neurodiversity/Wellness]
+
+    %% Feedback for Thin Ice
+    Alpha -. "High Confidence" .-> GEN
+    Beta -. "New Phenotype Signal" .-> GEN
