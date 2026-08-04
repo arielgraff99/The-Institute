@@ -1,0 +1,19 @@
+{
+  "records": 30,
+  "unique_study_families": 28,
+  "web_search_queries": 19,
+  "web_open_calls": 1,
+  "prior_institute_artifacts_used": 3,
+  "input_tokens": null,
+  "output_tokens": null,
+  "estimated_cost": null,
+  "wall_time_seconds": null,
+  "failures": [],
+  "limitations": [
+    "No licensed Embase/PsycINFO/Web of Science search",
+    "No duplicate human screening",
+    "Risk-of-bias file is a sentinel design screen, not formal instrument-level appraisal",
+    "Formal psychiatric historical holdout requires alternate re-derived framework",
+    "Evidence ledger is purposive sentinel set, not exhaustive"
+  ]
+}
