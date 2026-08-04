@@ -57,13 +57,19 @@ The 2026 Cureus meta-analysis by Hummad et al. reported a pooled OR of 2.11 for 
 
 The ranking is qualitative and does not represent numerical model probabilities.
 
-## Files
+## Required pilot deliverables
 
+All nine deliverables specified by the Institute configuration are present:
+
+- `search_log.csv` — exact search queries executed in this chat pilot; result counts intentionally omitted when not reproducibly exposed
+- `reference_master.csv` — shared evidence ledger with study-family identity, design, outcomes, bias and model relation
+- `study_family_map.csv` — parent cohorts/trials and companion publications to prevent false replication
+- `claim_evidence_matrix.csv` — central claims, evidence labels, blockers and required verification
+- `risk_of_bias.csv` — result-level pilot bias screen; explicitly not represented as a completed formal RoB/ROBINS assessment
+- `missing_evidence_log.csv` — registry/protocol/publication matching and unresolved missing-evidence questions
+- `audit_log.csv` — epistemic-auditor decisions and claim-block events
 - `model_comparison.md` — claim-level synthesis and model adjudication
-- `study_family_map.csv` — major parent cohorts/trials and companion publications identified in the pilot
-- `claim_evidence_matrix.csv` — central claims, evidence labels, blockers, and required verification
-- `search_log.csv` — exact search queries executed in this chat pilot
-- `process_metrics.json` — available execution telemetry and explicitly null unavailable metrics
+- `process_metrics.json` — execution telemetry, 38 exact queries, unavailable token/cost fields left null, and tool-failure metadata
 
 ## Decisive next study
 
