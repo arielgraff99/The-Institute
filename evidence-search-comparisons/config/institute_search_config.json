@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "project": {
+    "name": "Institute Evidence Integrity Search",
+    "review_type": "systematic-style evidence map",
+    "protocol_version": "2.0",
+    "run_date": "2026-08-03",
+    "primary_question": "Does treatment-resistant depression meet the same evidentiary criteria that previously justified separation of diseases, endotypes, or stages?",
+    "coverage_limits": [
+      "Web-accessible sources only in this pilot",
+      "No claim of exhaustive database coverage",
+      "No independent duplicate human screening",
+      "No quantitative pooling unless studies are sufficiently comparable"
+    ]
+  },
+  "competing_models": [
+    {"id": "H1", "label": "Distinct disease", "prediction": "A stable pretreatment discriminator separates future TRD from responsive MDD and predicts distinct course or treatment interaction."},
+    {"id": "H2", "label": "Stage or severity", "prediction": "Resistance probability increases continuously with severity, chronicity, recurrence, and accumulated illness."},
+    {"id": "H3", "label": "Multiple endotypes", "prediction": "Several reproducible biological subgroups cut across the binary TRD boundary and show differential treatment benefit."},
+    {"id": "H4", "label": "Operational treatment-course category", "prediction": "Membership changes materially with definitions, treatment adequacy, adherence, access, and diagnostic correction."},
+    {"id": "H5", "label": "Mixed model", "prediction": "Stage, endotype, and pseudo-resistance mechanisms contribute in different proportions."},
+    {"id": "H0", "label": "Artefact or selection model", "prediction": "Apparent biological separation is substantially explained by selection, treatment exposure, measurement, or selective publication."}
+  ],
+  "initial_allocation_percent": {
+    "historical_splits": 10,
+    "definitions_and_regulation": 8,
+    "molecular_and_cellular": 12,
+    "circuits_and_physiology": 8,
+    "clinical_and_longitudinal": 10,
+    "treatment_and_resistance": 12,
+    "social_and_health_services": 5,
+    "study_validity": 10,
+    "replication_and_study_families": 8,
+    "missing_evidence_and_registries": 10,
+    "integration_and_model_discrimination": 7
+  },
+  "shared_discriminator_questions": [
+    "Was the feature measured before resistance developed?",
+    "Does it prospectively predict resistance?",
+    "Is it stable across time and treatment?",
+    "Is it specific beyond severity, chronicity, bipolarity, comorbidity, medication exposure, adherence, and socioeconomic access?",
+    "Does it reproduce in independent cohorts and diverse settings?",
+    "Does it identify a different natural history?",
+    "Does it modify comparative treatment benefit or harm?",
+    "Would using it improve clinical decisions?"
+  ],
+  "roles": [
+    {"id": "protocol_manager", "independent": true, "outputs": ["frozen_protocol", "amendment_log", "sentinel_set"]},
+    {"id": "domain_searcher", "instances": 7, "independent": false, "outputs": ["search_log", "candidate_records", "gap_queries"]},
+    {"id": "study_validity", "independent": true, "outputs": ["result_level_risk_of_bias", "appraisal_rationale"]},
+    {"id": "replication_auditor", "independent": true, "outputs": ["study_family_map", "independent_replication_status", "effect_shrinkage"]},
+    {"id": "missing_evidence", "independent": true, "outputs": ["registry_publication_pairs", "outcome_switching_flags", "missing_evidence_judgment"]},
+    {"id": "claim_integrator", "independent": true, "outputs": ["claim_evidence_matrix", "model_comparison"]},
+    {"id": "epistemic_auditor", "independent": true, "veto": true, "outputs": ["blocked_claims", "audit_questions", "resolution_log"]},
+    {"id": "branch_controller", "independent": true, "outputs": ["redistribution_decisions", "next_cycle_queries", "stop_decision"]}
+  ],
+  "evidence_labels": ["DIRECT_EVIDENCE", "CONVERGENT_SUPPORT", "INFERENCE", "HYPOTHESIS", "SPECULATION", "CONTRADICTED"],
+  "required_record_fields": [
+    "record_id", "study_family_id", "citation", "doi", "pmid", "registry_id", "design", "population", "trd_definition", "treatment_exposure", "comparator", "outcome", "effect_estimate", "uncertainty", "prespecified_status", "risk_of_bias_tool", "risk_of_bias_judgment", "replication_status", "missing_evidence_risk", "funding", "conflicts", "model_relation"
+  ],
+  "appraisal_routing": {
+    "randomized_trial": "RoB 2",
+    "nonrandomized_intervention": "ROBINS-I",
+    "observational_exposure": "ROBINS-E",
+    "diagnostic_accuracy": "QUADAS-2",
+    "prediction_model": "PROBAST or PROBAST-AI",
+    "systematic_review": "ROBIS or AMSTAR 2",
+    "missing_evidence_meta_analysis": "ROB-ME",
+    "omics_or_basic_science": "domain checklist: multiplicity, batch, blinding, prespecification, replication, confounding, assay validity"
+  },
+  "claim_block_rules": [
+    {"id": "CB1", "condition": "decisive citation or numerical result cannot be verified", "action": "block"},
+    {"id": "CB2", "condition": "causal language relies only on cross-sectional or uncontrolled association", "action": "block_or_downgrade"},
+    {"id": "CB3", "condition": "discovery biomarker lacks independent validation", "action": "limit_to_hypothesis_generating"},
+    {"id": "CB4", "condition": "companion publications or overlapping datasets are counted as independent", "action": "deduplicate_to_study_family"},
+    {"id": "CB5", "condition": "registered primary outcomes are missing or changed without explanation", "action": "high_missing_evidence_concern"},
+    {"id": "CB6", "condition": "subgroup or threshold was defined after observing outcomes", "action": "exploratory_only"},
+    {"id": "CB7", "condition": "disease distinction is inferred only from a regulator-approved indication", "action": "classify_as_treatment_population_not_ontology"},
+    {"id": "CB8", "condition": "exact search counts lack query, source, date, and export", "action": "do_not_report_counts"}
+  ],
+  "dynamic_redistribution": {
+    "stable_fraction": 0.60,
+    "emerging_discriminator_fraction": 0.25,
+    "contradiction_replication_reserve": 0.15,
+    "triggers": [
+      "new pretreatment discriminator",
+      "failed sentinel retrieval",
+      "incompatible definitions",
+      "unreplicated high-impact claim",
+      "registry-publication discrepancy",
+      "model predictions remain nondiscriminating"
+    ]
+  },
+  "cycle_gate": {
+    "required_outputs": ["new_pivotal_studies", "supporting_and_contradictory_evidence", "unresolved_validity_issues", "missing_evidence_findings", "proposed_queries", "protocol_amendments"],
+    "human_gate_required_for": ["changing confirmatory eligibility", "promoting exploratory subgroup to primary model", "clinical or regulatory recommendation"]
+  },
+  "stopping_rule": [
+    "Two consecutive cycles add no study family that changes a conclusion or confidence rating",
+    "New searches mostly return duplicates or represented evidence classes",
+    "Pivotal study-family citation mining is complete within available access",
+    "All sentinel studies are retrieved or misses are explained",
+    "All blocked central claims are resolved or remain explicitly blocked"
+  ],
+  "deliverables": [
+    "search_log.csv", "reference_master.csv", "study_family_map.csv", "claim_evidence_matrix.csv", "risk_of_bias.csv", "missing_evidence_log.csv", "audit_log.csv", "model_comparison.md", "process_metrics.json"
+  ],
+  "process_metrics": {
+    "measure": ["queries", "records_retrieved", "unique_study_families", "full_texts_checked", "claims_blocked", "claims_resolved", "registry_matches", "duplicate_publications_removed", "cycles", "wall_time_seconds", "input_tokens", "output_tokens", "estimated_cost_usd"],
+    "cost_formula": "input_tokens/1000000*input_rate + output_tokens/1000000*output_rate",
+    "required_metadata": ["model_name", "model_version", "pricing_date", "input_rate", "output_rate", "currency", "failed_calls", "retry_count"]
+  }
+}
