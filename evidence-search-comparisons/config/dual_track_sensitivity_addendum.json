@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "name": "Institute Dual-Track Evidence Sensitivity Addendum",
+  "purpose": "Preserve broad discovery while maintaining a separate confirmatory evidence layer. No scientifically relevant study is excluded solely because it lacks registration, preregistration, a protocol, or prospective prespecification.",
+  "applies_to": "institute_search_config.json protocol_version 2.0 and later unless superseded",
+  "tracks": {
+    "unrestricted_discovery": {
+      "label": "ALL_RELEVANT_EVIDENCE",
+      "inclusion_rule": "Include all scientifically relevant records regardless of registration status, publication type, prospective prespecification, direction of result, or whether the analysis is exploratory, provided the source and study identity can be verified.",
+      "include": [
+        "registered and unregistered studies",
+        "prospective and retrospective studies",
+        "cross-sectional studies",
+        "secondary and post hoc analyses",
+        "preprints",
+        "conference abstracts",
+        "dissertations and theses",
+        "regulatory reviews",
+        "registries with and without publications",
+        "negative and null studies",
+        "historical studies conducted before modern registration norms"
+      ],
+      "use": [
+        "mechanism discovery",
+        "candidate endotype detection",
+        "rare or unexpected signal detection",
+        "historical context",
+        "hypothesis generation",
+        "identification of evidence that would be lost by strict filters"
+      ],
+      "restriction": "Evidence-quality problems must be labeled and appraised but do not remove the record from this track unless the source cannot be verified or is scientifically irrelevant to the question."
+    },
+    "confirmatory_adjudication": {
+      "label": "HIGHER_CONFIDENCE_EVIDENCE",
+      "source_pool": "Derived from the same unrestricted evidence ledger; do not perform a separate search that could miss records.",
+      "promotion_criteria": [
+        "source and decisive results are verifiable",
+        "design is appropriate for the claim being made",
+        "temporality is adequate for causal or predictive claims",
+        "study-family overlap is resolved",
+        "major confounding is addressed when relevant",
+        "discovery biomarkers or subgroups have independent validation or are explicitly retained as exploratory",
+        "outcome or analysis provenance is sufficiently clear to judge selective reporting risk"
+      ],
+      "registration_rule": "Registration or preregistration strengthens confidence and facilitates missing-evidence assessment but is not an automatic eligibility requirement. Lack of registration alone must never exclude an otherwise relevant study. For historical eras or study designs where registration was not customary, absence of registration should be treated as non-informative or only mildly informative rather than a major penalty.",
+      "downgrade_not_exclude": [
+        "unregistered but otherwise relevant study",
+        "secondary analysis",
+        "post hoc subgroup",
+        "cross-sectional association used only for association claims",
+        "preprint with sufficient methods and verifiable data provenance"
+      ]
+    }
+  },
+  "mandatory_outputs": [
+    "unrestricted_result",
+    "confirmatory_result",
+    "delta_analysis"
+  ],
+  "delta_analysis": {
+    "compare": [
+      "direction of conclusion",
+      "model ranking",
+      "confidence level",
+      "effect magnitude when pooling is valid",
+      "number of unique study families",
+      "which mechanisms or subgroups appear only in the unrestricted track",
+      "which claims become blocked or downgraded under confirmatory adjudication"
+    ],
+    "interpretation_rule": "A signal present only in the unrestricted track is retained as a discovery signal, not discarded. It is labeled CONFIRMATION_PENDING unless contradicted by stronger evidence.",
+    "restriction_sensitivity": "If model preference or a central conclusion materially changes between tracks, label the conclusion RESTRICTION_SENSITIVE and identify the exact records causing the change."
+  },
+  "claim_reporting": {
+    "required_fields": [
+      "claim",
+      "unrestricted_evidence_label",
+      "confirmatory_evidence_label",
+      "registration_status_effect",
+      "study_family_independence",
+      "restriction_sensitivity",
+      "required_next_evidence"
+    ]
+  },
+  "prohibited_behavior": [
+    "excluding a study solely because it was not registered",
+    "treating registration as proof of validity",
+    "treating lack of registration as proof of invalidity",
+    "mixing exploratory and confirmatory evidence without labeling",
+    "discarding historical evidence because modern registration standards did not exist",
+    "counting multiple publications from one parent cohort as independent replication"
+  ]
+}
