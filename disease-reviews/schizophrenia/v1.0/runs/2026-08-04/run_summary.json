@@ -1,0 +1,23 @@
+{
+  "module_version": "1.0",
+  "records": 32,
+  "study_families": 32,
+  "higher_confidence_records": 31,
+  "preferred_formulation": "COMPOSITE_MULTIAXIAL",
+  "candidate_results": {
+    "TRADITIONAL_CLINICAL_SUBTYPES": "NOT_SUPPORTED",
+    "TREATMENT_RESISTANT_SCHIZOPHRENIA": "SUPPORTED_AS_OPERATIONAL_PARTIALLY_AS_BIOLOGICAL",
+    "CLOZAPINE_RESISTANT_SCHIZOPHRENIA": "PARTIALLY_SUPPORTED",
+    "DEFICIT_PRIMARY_NEGATIVE_SYMPTOM_PHENOTYPE": "PARTIALLY_SUPPORTED",
+    "COGNITIVE_SUBTYPES": "PARTIALLY_SUPPORTED",
+    "PSYCHOSIS_BIOTYPES": "STRONGLY_PROVISIONALLY_SUPPORTED",
+    "IMMUNE_INFLAMMATORY_ENDOTYPES": "PROVISIONAL",
+    "NEUROIMAGING_SUBTYPES": "NOT_YET_SUPPORTED",
+    "COMPOSITE_MULTIAXIAL": "PREFERRED"
+  },
+  "global_distinct_disease": "NOT_SUPPORTED",
+  "global_single_biological_subtype": "NOT_SUPPORTED",
+  "trs": "SUPPORTED_AS_TREATMENT_RESPONSE_STATE",
+  "psychosis_biotypes": "STRONGLY_PROVISIONALLY_SUPPORTED_TRANSDIAGNOSTIC_ENDOTYPES",
+  "holdout_result": "All promoted scientific criteria retain non-target-family support; schizophrenia classification unchanged under holdout."
+}
