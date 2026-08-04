@@ -1,0 +1,12 @@
+query_id,batch,query,purpose,provenance
+Q01,1,"treatment resistant depression trajectories sequential treatment failures stage dimensional resistance review 2025 2026",trajectory/current literature,exact web query
+Q02,1,"major depressive disorder endotypes inflammation metabolic immune treatment response biomarker review 2025 2026",MDD-wide endotypes,exact web query
+Q03,1,"treatment naive first episode depression biomarker future treatment resistance prospective 2024 2025 2026",temporality/pre-resistance,exact web query
+Q04,1,"depression pseudoresistance adherence inadequate treatment exposure treatment resistant depression review 2023 2024 2025",pseudoresistance,exact web query
+Q05,1,"depression endotypes not treatment resistant transdiagnostic inflammatory metabolic subtype antidepressant treatment interaction",endotypes independent of TRD,exact web query
+Q06,2,"FKBP5 depression genetic biomarker nelivaptan randomized trial 2025 molecular psychiatry",candidate precision-treatment endotype,exact web query
+Q07,2,"immune subtype depression dupilumab molecular psychiatry 2026 study",immune endotype,exact web query
+Q08,2,"major depression biological subtypes endotypes machine learning multiomics 2025 prospective antidepressant response",multi-omics endotypes,exact web query
+Q09,2,"first episode drug naive depression future treatment resistant prospective biomarker 2025 fMRI",pretreatment prediction,exact web query
+Q10,3,"Multi-omics integration of inflammation, immunity, and metabolism identifies depression subtypes associated with treatment response 2026",verify treatment-response endotype,exact web query
+Q11,3,"Episode-wide Maudsley staging depression 2026",verify dimensional trajectory study,exact web query
