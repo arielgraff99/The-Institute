@@ -1,0 +1,37 @@
+{
+  "run_id": "schizophrenia_v1_recursive_2026-08-04",
+  "module": "Schizophrenia Subtype Review Module",
+  "module_version": "1.0",
+  "run_type": "RECURSIVE_EXPANSION_TO_SATURATION",
+  "base_sentinel_run": "disease-reviews/schizophrenia/v1.0/runs/2026-08-04/",
+  "historical_framework": "historical-disease-splitting/run_2026-08-04_v0.2/frozen_disease_splitting_framework_v0.2.json",
+  "historical_framework_version": "0.2",
+  "historical_framework_immutable": true,
+  "target_family_holdout": ["HIST008", "HIST035"],
+  "strict_holdout_additional_exclusion": ["HIST019"],
+  "combined_records": 52,
+  "ledger_study_family_roots": 46,
+  "recursive_cycles": 10,
+  "saturation_rule": "At least three consecutive cycles after the last material refinement without a new study family that changes a class-level conclusion.",
+  "saturation_met": true,
+  "last_material_refinement_cycle": 7,
+  "no_change_cycles_after_refinement": [8, 9, 10],
+  "preferred_classification": "COMPOSITE_MULTIAXIAL / HETEROGENEOUS_SYNDROME",
+  "principal_outputs": [
+    "final_classification_recursive.md",
+    "subtype_adjudication_recursive.csv",
+    "evidence_additions_recursive.csv",
+    "study_family_map_recursive.csv",
+    "missing_evidence_log.csv",
+    "saturation_log.csv",
+    "process_metrics_recursive.json",
+    "search_provenance_recursive.md"
+  ],
+  "limitations": [
+    "Web-accessible evidence map rather than licensed-database systematic review.",
+    "No duplicate human screening.",
+    "No study-family-reconstructed quantitative meta-analysis.",
+    "Some early-cycle query strings were normalized from session records after context compaction rather than preserved byte-for-byte.",
+    "Study-family-root counts do not imply all evidence families are statistically independent because reviews and meta-analyses overlap primary cohorts."
+  ]
+}
