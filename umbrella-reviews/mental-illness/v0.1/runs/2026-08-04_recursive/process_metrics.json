@@ -1,0 +1,20 @@
+{
+  "run_id": "mental_illness_umbrella_v0.1_recursive_2026-08-04",
+  "run_date": "2026-08-04",
+  "historical_framework": "0.2",
+  "historical_framework_immutable": true,
+  "branches": 6,
+  "selected_evidence_records": 33,
+  "selected_study_family_ids": 33,
+  "web_search_batches": 12,
+  "web_search_queries": 72,
+  "recursive_cycles": 6,
+  "last_material_refinement_cycle": 3,
+  "no_change_cycles_after_refinement": [4, 5, 6],
+  "saturation_met": true,
+  "saturation_scope": "branch-level class conclusions within web-accessible evidence map",
+  "token_use": null,
+  "cost": null,
+  "wall_time": null,
+  "telemetry_note": "Token, cost and wall-time values were not available as verified telemetry and are intentionally null."
+}
