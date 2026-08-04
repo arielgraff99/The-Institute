@@ -1,0 +1,194 @@
+{
+  "addendum_version": "1.0.0",
+  "extends": "dementia_brain_insulin_temporal_run.json",
+  "purpose": "Add an upstream genetic and experimentally induced variant layer to the cross-dementia brain-insulin temporal analysis.",
+  "model_ordering_rule": "Prepend Model 0 before Models 1-5. Model 0 is an etiologic/susceptibility model and does not replace the downstream mechanistic models.",
+  "model_0": {
+    "id": "M0",
+    "name": "genetic_susceptibility_and_variant_induction",
+    "title": "Genetic susceptibility and experimentally induced variant model",
+    "summary": "Inherited common variants, polygenic architecture, rare/pathogenic variants, and experimentally introduced variants may alter insulin/IGF signaling, cellular metabolism, or susceptibility to metabolic stress before clinical dementia, with effects that may be shared across dementias or disease-specific.",
+    "core_questions": [
+      "Do dementia-risk variants alter brain insulin signaling or insulin responsiveness before overt neurodegeneration?",
+      "Do type-2-diabetes, insulin-resistance, glycemic, adiposity, or metabolic-risk variants modify risk, age at onset, pathology, progression, or insulin-signaling phenotype in specific dementias?",
+      "Are there shared variants, loci, genes, pathways, eQTLs, pQTLs, sQTLs, or polygenic components linking insulin biology and more than one dementia?",
+      "Are observed genetic overlaps causal, pleiotropic, mediated, confounded by linkage disequilibrium, or ancestry-specific?",
+      "Can introduction or correction of a variant in an isogenic preclinical system induce or rescue an insulin-signaling phenotype?",
+      "Does the same variant produce the same insulin phenotype across neurons, astrocytes, microglia, endothelium, and different dementia-pathology backgrounds?"
+    ],
+    "genetic_evidence_classes": {
+      "G0_constitutive_genotype": "Genotype is present from conception. This establishes temporal availability of susceptibility only, not onset of the functional insulin phenotype.",
+      "G1_common_variants": [
+        "common SNPs and polymorphisms",
+        "GWAS loci",
+        "fine-mapped credible-set variants",
+        "haplotypes",
+        "common structural variation when relevant"
+      ],
+      "G2_polygenic_architecture": [
+        "polygenic risk scores",
+        "genetic correlation",
+        "cross-trait LD-score regression",
+        "local genetic correlation",
+        "pathway-specific polygenic scores",
+        "partitioned heritability"
+      ],
+      "G3_rare_and_pathogenic_variants": [
+        "rare coding variants",
+        "loss-of-function variants",
+        "copy-number or repeat-expansion variants",
+        "familial/pathogenic dementia variants",
+        "high-impact metabolic or insulin-pathway variants"
+      ],
+      "G4_functional_genomics": [
+        "eQTL",
+        "pQTL",
+        "sQTL",
+        "methylation QTL where genetically anchored",
+        "TWAS",
+        "colocalization",
+        "allele-specific expression",
+        "single-cell or cell-type-resolved genetic effects"
+      ],
+      "G5_causal_inference": [
+        "Mendelian randomization",
+        "multivariable Mendelian randomization",
+        "mechanism-specific genetic instruments for insulin sensitivity, beta-cell function, glycemia, adiposity, lipids, inflammation, or vascular traits",
+        "bidirectional analyses",
+        "mediation analyses where assumptions are defensible"
+      ],
+      "G6_variant_to_function_experiment": [
+        "patient-derived iPSC models carrying natural variants",
+        "isogenic CRISPR knock-in",
+        "isogenic CRISPR correction/reversion",
+        "knockout or haploinsufficiency models",
+        "conditional or cell-specific gene manipulation",
+        "transgenic or knock-in animal models",
+        "crosses between dementia-pathology models and insulin-pathway manipulations",
+        "organoids and assembloids",
+        "humanized or chimeric microglial models",
+        "induced metabolic stress or insulin-challenge experiments stratified by genotype"
+      ]
+    },
+    "variant_directions_to_test": [
+      {
+        "direction": "dementia_to_insulin",
+        "definition": "Dementia-risk genotype changes insulin/IGF signaling or metabolic response."
+      },
+      {
+        "direction": "metabolic_to_dementia",
+        "definition": "Genetic liability to insulin resistance, diabetes, glycemia, adiposity, or related metabolic traits changes dementia risk or trajectory."
+      },
+      {
+        "direction": "shared_pleiotropy",
+        "definition": "The same locus or pathway independently influences both dementia biology and metabolic/insulin biology."
+      },
+      {
+        "direction": "interaction",
+        "definition": "Dementia genotype modifies the effect of systemic metabolic exposure, or metabolic genotype modifies dementia-pathology effects."
+      }
+    ],
+    "disease_genetic_targets_seed_not_exhaustive": {
+      "AD": ["APOE", "TREM2", "SORL1", "ABCA7", "BIN1", "CLU", "PICALM", "CD33", "APP", "PSEN1", "PSEN2"],
+      "Lewy_body_PD_dementia": ["GBA1", "SNCA", "LRRK2", "APOE", "BIN1"],
+      "FTD": ["C9orf72", "GRN", "MAPT", "TBK1", "VCP"],
+      "vascular_cognitive_impairment": ["NOTCH3", "HTRA1", "COL4A1", "COL4A2", "APOE"],
+      "metabolic_insulin_pathway_seed": ["INSR", "IRS1", "IRS2", "IGF1R", "PIK3CA", "PIK3R1", "AKT1", "AKT2", "GSK3B", "MTOR", "TCF7L2", "PPARG", "FTO"]
+    },
+    "preclinical_variant_requirements": {
+      "preferred_design": "isogenic variant introduction or correction with matched background",
+      "required_metadata": [
+        "species_or_human_cell_source",
+        "variant_and_zygosity",
+        "natural_patient_variant_vs_engineered_variant",
+        "genetic_background",
+        "isogenic_status",
+        "cell_type",
+        "brain_region_or_organoid_identity",
+        "dementia_pathology_background",
+        "age_or_maturation_stage",
+        "insulin_exposure_or_challenge",
+        "functional_insulin_readout",
+        "baseline_metabolic_state",
+        "rescue_or_reversion_experiment",
+        "replication",
+        "sex_if_relevant",
+        "batch_and_clone_effects"
+      ],
+      "strongest_causal_pattern": "Introduce a variant into an isogenic control and induce the phenotype, then correct/revert the variant and rescue the phenotype, preferably across independent clones and with functional insulin stimulation.",
+      "do_not_equate": [
+        "transcript change with insulin resistance",
+        "glucose hypometabolism with insulin resistance",
+        "dementia pathology in a transgenic model with a genetically caused insulin phenotype",
+        "a constitutive genotype with early functional pathway activation"
+      ]
+    },
+    "predictions": [
+      "If a shared upstream genetic mechanism exists, cross-dementia genetic analyses should identify reproducible shared loci or pathways linked specifically to insulin/metabolic signaling.",
+      "If effects are disease-specific, variant-to-insulin phenotypes should depend on dementia genotype/pathology background or cell type.",
+      "If metabolic genetic liability is causal, genetically predicted insulin-resistance-related traits should influence dementia outcomes under pleiotropy-robust analyses.",
+      "If genetic overlap is noncausal pleiotropy, shared loci may exist without consistent mediation through insulin signaling.",
+      "Isogenic introduction/correction experiments should provide stronger variant-to-function evidence than non-isogenic case-control cellular comparisons."
+    ]
+  },
+  "temporal_integration": {
+    "principle": "Genetic susceptibility and functional phenotype onset are separate clocks.",
+    "genetic_clock": [
+      "genotype_present_from_conception",
+      "developmental_or_cell-state-dependent_expression",
+      "first_measurable_insulin_signaling_abnormality",
+      "first_dementia_pathology",
+      "first_neurodegeneration",
+      "prodromal_clinical_stage",
+      "dementia"
+    ],
+    "required_fields": [
+      "variant_id",
+      "gene_or_locus",
+      "variant_class",
+      "effect_allele",
+      "ancestry",
+      "dementia_group",
+      "metabolic_trait",
+      "cell_or_tissue",
+      "functional_insulin_phenotype",
+      "earliest_stage_measured",
+      "pathology_status_at_measurement",
+      "genotype_precedes_pathology_by_definition",
+      "functional_phenotype_precedence_status",
+      "longitudinal_or_cross_sectional",
+      "causal_inference_method",
+      "pleiotropy_assessment",
+      "colocalization_status",
+      "replication_status"
+    ],
+    "claim_rule": "Never state that a pathway begins at birth merely because the risk genotype is present at birth. Report inherited susceptibility as temporally antecedent, while functional insulin-signaling onset remains independently estimated."
+  },
+  "required_outputs": [
+    "genetic_cross_dementia_matrix.csv",
+    "variant_to_insulin_function_ledger.csv",
+    "polygenic_and_cross_trait_analysis.csv",
+    "mendelian_randomization_audit.csv",
+    "preclinical_variant_models.csv",
+    "genotype_to_phenotype_temporal_map.csv",
+    "gene_celltype_pathway_network.graphml"
+  ],
+  "bias_and_validity_checks": [
+    "population stratification",
+    "ancestry transferability",
+    "linkage disequilibrium",
+    "horizontal pleiotropy",
+    "weak instruments",
+    "winner's curse",
+    "sample overlap",
+    "multiple testing",
+    "post-hoc pathway selection",
+    "batch and clone effects in iPSC models",
+    "background-strain effects in animals",
+    "developmental compensation in constitutive knockout models",
+    "nonphysiological overexpression in transgenic models",
+    "cell-type mismatch",
+    "lack of functional insulin challenge",
+    "absence of isogenic rescue"
+  ]
+}
