@@ -1,0 +1,34 @@
+{
+  "project": "Mental Illness Umbrella Review",
+  "version": "0.1",
+  "run_date": "2026-08-04",
+  "root_entity": "mental illness / psychiatric psychopathology",
+  "historical_framework_version": "0.2",
+  "historical_framework_immutable": true,
+  "goal": "Recursively test which current psychiatric groupings are best represented as distinct diseases, biological endotypes, dimensions/spectra, stages, treatment-response states, operational categories, or composite multiaxial structures.",
+  "rules": [
+    "Do not privilege DSM, ICD, HiTOP, RDoC, genomic factors, or any existing nosology a priori.",
+    "Etiologically defined diseases are peeled off only when frozen distinct-disease gates are met.",
+    "Residual groups cannot be promoted by exclusion alone; U09 applies.",
+    "Cross-diagnostic endotypes are allowed and should not be forced back inside legacy diagnoses.",
+    "Dimensions, longitudinal stages, treatment-response states, and context are orthogonal axes unless evidence shows otherwise.",
+    "Current diagnoses may remain operational clinical categories even when they do not map to distinct biological diseases.",
+    "Target-family holdout must be used when a specific downstream diagnostic family is tested in depth."
+  ],
+  "seed_candidate_partitions": [
+    "etiologically defined psychiatric-presenting diseases",
+    "schizophrenia-bipolar liability",
+    "internalizing liability",
+    "neurodevelopmental liability",
+    "compulsive liability",
+    "substance-use liability",
+    "externalizing/disinhibition/antagonism",
+    "general psychopathology liability",
+    "cross-cutting biological endotypes/biotypes",
+    "symptom and cognitive dimensions",
+    "developmental/course trajectories and stages",
+    "treatment-response states",
+    "operational legacy diagnoses",
+    "social/environmental/context modifiers"
+  ]
+}
