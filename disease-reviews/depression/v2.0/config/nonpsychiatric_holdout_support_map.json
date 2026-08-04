@@ -1,0 +1,22 @@
+{
+  "excluded_historical_cases": ["HIST008","HIST019","HIST035"],
+  "excluded_rationale": "Psychiatric/developmental nosology comparators removed to reduce target-family criterion leakage.",
+  "criterion_support": {
+    "U01": ["HIST020","HIST021","HIST031"],
+    "U02": ["HIST003","HIST009","HIST022","HIST023"],
+    "U03": ["HIST020","HIST030","HIST031"],
+    "U04": ["HIST007","HIST013","HIST014","HIST015","HIST038"],
+    "U05": ["HIST020","HIST028","HIST030","HIST040"],
+    "U06": ["HIST002","HIST007","HIST015","HIST038"],
+    "U07": ["HIST007","HIST013","HIST029","HIST039"],
+    "U08": ["HIST004","HIST009","HIST010","HIST022","HIST024","HIST036"],
+    "U09": ["HIST006","HIST028","HIST031","HIST032"],
+    "D01": ["HIST003","HIST009","HIST010","HIST011","HIST012","HIST017","HIST022","HIST024"],
+    "E01": ["HIST005","HIST006","HIST033","HIST037"],
+    "Q01": ["HIST027","HIST030","HIST038"],
+    "Q02": ["HIST027","HIST030","HIST038"],
+    "S01": ["HIST007","HIST015","HIST038"],
+    "R01": ["HIST013","HIST014","HIST015"],
+    "R02": ["HIST013","HIST014","HIST015"]
+  }
+}
