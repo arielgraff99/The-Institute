@@ -1,0 +1,18 @@
+{
+  "framework_name":"Historical Disease-Splitting Framework",
+  "framework_version":"0.2",
+  "status":"FROZEN_FOR_DOWNSTREAM_TESTING",
+  "universal_criteria":["U01","U02","U03","U04","U05","U06","U07","U08","U09"],
+  "classification_specific_criteria":{
+    "DISTINCT_DISEASE":{"required":["U01","U02","U03","U04","U05","D01"],"strongly_expected":["U06","U08"],"conditional":["U09"]},
+    "BIOLOGICAL_SUBTYPE_OR_ENDOTYPE":{"required":["U01","U02","U03","U04","U05","E01"],"strongly_expected":["U08"],"conditional":["U09"]},
+    "DIMENSION_OR_SPECTRUM":{"required":["U01","U02","U04","U05","Q01","Q02"],"strongly_expected":["Q03"]},
+    "DISEASE_STAGE":{"required":["U01","U02","U04","U05","S01"]},
+    "TREATMENT_RESPONSE_STATE":{"required":["U01","U02","U04","R01","R02"],"strongly_expected":["R03"]},
+    "OPERATIONAL_CLINICAL_CATEGORY":{"required":["U01","U07","O01"]}
+  },
+  "historical_context_controls":["H01","H02","H03","H04","H05","H06","H07","H08"],
+  "composite_multiaxial_rule":"Do not force one mutually exclusive final category when evidence supports orthogonal axes.",
+  "target_family_holdout_rule":"When target is close to historical comparators, repeat sensitivity without same-family historical cases.",
+  "amendment_rule":"Disease-specific module cannot edit frozen framework."
+}
