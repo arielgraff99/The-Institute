@@ -55,13 +55,19 @@ The core v0.1 findings survived:
 
 ## Files
 
-- `added_cases_v0.2.csv`
-- `historical_case_matrix_v0.2.csv`
-- `v0.1_to_v0.2_amendment_analysis.md`
-- `frozen_disease_splitting_framework_v0.2.json`
-- `methodology_report_v0.2.md`
-- `search_log_v0.2.csv`
-- `process_metrics_v0.2.json`
+- `added_cases_v0.2.csv` — 19 added stress-test comparators
+- `historical_case_matrix_v0.2.csv` — combined 40-case matrix
+- `contextual_attribution_matrix_v0.2.csv` — scientific versus socioeconomic/political/technological/adoption context by case
+- `candidate_criteria_face_validity_v0.2.csv` — promotion/rejection decisions for candidate criteria
+- `v0.1_to_v0.2_amendment_analysis.md` — explicit version delta and reasons
+- `frozen_disease_splitting_framework_v0.2.json` — immutable downstream interface
+- `methodology_report_v0.2.md` — narrative synthesis and limitations
+- `search_log_v0.2.csv` — 52-query normalized provenance log
+- `process_metrics_v0.2.json` — coverage, telemetry and integrity limitations
+
+## Provenance note
+
+The run executed 52 web-search queries in 11 batches. After tool-context compaction, every byte-exact raw query string was not recoverable during final artifact assembly. The search log therefore explicitly labels normalized reconstructed queries rather than falsely representing them as exact raw tool calls. No search-result counts, token counts, costs or wall-time values were invented.
 
 ## Freeze rule
 
