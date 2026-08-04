@@ -1,0 +1,22 @@
+{
+  "run": "2026-08-04_recursive",
+  "module_version": "2.0",
+  "framework_version": "0.2",
+  "holdout_version": "0.2-H1",
+  "files": [
+    "evidence_ledger_recursive.csv",
+    "criterion_judgments_recursive.json",
+    "run_summary_v2.json",
+    "trajectory_recursive.json",
+    "temporality_recursive.json",
+    "pseudoresistance_recursive.json",
+    "endotypes_recursive.json",
+    "holdout_sensitivity_recursive.json",
+    "search_log_recursive.csv",
+    "saturation_log.csv",
+    "missing_evidence_log_recursive.csv",
+    "process_metrics_recursive.json",
+    "final_classification_recursive.md"
+  ],
+  "status": "COMPLETED_SATURATED_FOR_PRIMARY_CLASSIFICATION_WITHIN_WEB_ACCESSIBLE_SCOPE"
+}
