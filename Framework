@@ -26,22 +26,38 @@ graph TD
         OUT[Outlier Success Tracer]
     end
 
-    %% Human Layer
-    subgraph "Lived Experience (10 Agents)"
-        NAR[JSON Narrative Database]
+    %% Human / Lived Experience Layer
+    subgraph "Lived Experience & Collateral Context (10 Agents)"
+        PAT[Patient Self-Report]
+        FAM[Family / Caregiver Collateral]
+        NAR[Provenance-Aware Narrative Database]
         PP[Patient Pheno-phenotype]
+        DISC[Informant Discordance Mapper]
+
+        PAT --> NAR
+        FAM --> NAR
+        PAT --> DISC
+        FAM --> DISC
+        NAR --> PP
+        DISC --> PP
     end
 
     %% Logic Flow
     PROT --> MRI
     BIO --> CM
     DRUG --> CM
-    NAR --> EA
-    
+    PP --> EA
+    DISC --> EA
+
+    %% Human-source interpretation rules
+    FAM -- "Longitudinal / Home Context" --> PP
+    PAT -- "Subjective Experience / Goals" --> PP
+    DISC -- "Preserve disagreement; do not average away" --> EA
+
     %% Branching Decisions
     CM -- "Conflict Detected" --> EA
     EA -- "Epistemic Veto" --> BM
-    
+
     BM -- "Alignment Path" --> Alpha[Branch Alpha: Clinical Pathology]
     BM -- "Divergence Path" --> Beta[Branch Beta: Neurodiversity/Wellness]
 
