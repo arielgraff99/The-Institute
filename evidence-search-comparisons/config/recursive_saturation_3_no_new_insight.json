@@ -1,0 +1,109 @@
+{
+  "config_version": "1.0.0",
+  "override_type": "authoritative_stopping_rule",
+  "applies_to": [
+    "dementia_brain_insulin_temporal_run",
+    "model0_genetics_preclinical",
+    "adaptive_aging_evolutionary_model",
+    "bpsd_clinical_phenotype_layer"
+  ],
+  "recursive_generation": {
+    "minimum_recursive_generations": 3,
+    "minimum_consecutive_zero_novel_insight_cycles_for_saturation": 3,
+    "count_cycle_zero_as_saturation_cycle": false,
+    "reset_streak_on_any_novel_insight": true,
+    "stopping_status_if_resource_cap_reached_before_saturation": "RESOURCE_LIMITED_NOT_SATURATED",
+    "scientific_saturation_may_not_be_claimed_without_three_zero_insight_cycles": true
+  },
+  "novel_insight_definition": {
+    "principle": "A novel insight is new verified information that changes, extends, challenges, localizes, temporally reorders, validates, invalidates, or materially changes confidence in the scientific model, clinical phenotype, measurement framework, or evidence map. Mere bibliographic novelty is insufficient.",
+    "resets_counter_if_any": [
+      "new eligible independent study family with nontrivial scientific information",
+      "new independent replication that materially changes confidence",
+      "new material contradiction or null finding",
+      "new evidence class or biological compartment",
+      "new insulin-signaling pathway node, mechanism, direction, or cell-type-specific effect",
+      "new dementia subtype or pathology-defined subgroup with a distinguishable phenotype",
+      "new common genetic variant, polymorphism, rare variant, pathogenic variant, polygenic signal, colocalized locus, or causal-genetic result that changes the evidence map",
+      "new genetically induced or genotype-defined preclinical model providing variant-to-function information",
+      "new evidence separating genetic susceptibility from functional insulin-signaling expression",
+      "new temporal dataset that moves the earliest defensible detection point",
+      "new evidence changing ordering relative to amyloid, tau, alpha-synuclein, TDP-43, vascular injury, inflammation, synaptic dysfunction, energetic dysfunction, or neuronal loss",
+      "new longitudinal evidence upgrading or downgrading temporal precedence",
+      "new evidence that an age-related insulin-signaling change is adaptive, neutral, maladaptive, compensatory, or pathological",
+      "new BPSD symptom, cluster, subtype, trajectory, or cross-diagnostic behavioral phenotype linked to insulin biology",
+      "new evidence that BPSD modifies or mediates a genotype-pathology-insulin relationship",
+      "new treatment-response interaction that distinguishes competing models",
+      "new clinically meaningful confounder, mediator, effect modifier, or collider affecting interpretation",
+      "new measurement-validity problem, correction, retraction, assay invalidation, or independent-method validation",
+      "new registry-publication discrepancy or missing-evidence finding that materially changes confidence",
+      "new terminology or construct only when it opens a previously unsearched evidence branch or changes eligibility/discrimination",
+      "new high-information discriminator or experimentally testable prediction separating surviving models",
+      "material change in model viability, confidence, or final adjudication category"
+    ],
+    "does_not_reset_counter": [
+      "duplicate publication from an already-linked study family with no additional result",
+      "same finding restated in a review without new underlying evidence",
+      "new citation that contributes no new eligible result, contradiction, replication, mechanism, phenotype, temporal information, or validity information",
+      "minor numerical or bibliographic correction that does not affect interpretation",
+      "LLM agreement without new external evidence",
+      "paraphrase or relabeling of an existing insight",
+      "additional search results that are entirely duplicates or already represented study families"
+    ]
+  },
+  "cycle_audit_required_fields": [
+    "cycle_id",
+    "generation_number",
+    "new_records_count",
+    "new_eligible_study_families_count",
+    "new_independent_replications_count",
+    "new_material_contradictions_count",
+    "new_mechanisms_count",
+    "new_genetic_insights_count",
+    "new_preclinical_variant_to_function_insights_count",
+    "new_temporal_insights_count",
+    "new_adaptive_vs_pathological_insights_count",
+    "new_bpsd_insights_count",
+    "new_measurement_validity_insights_count",
+    "new_missing_evidence_insights_count",
+    "new_discriminators_count",
+    "model_confidence_changed",
+    "final_adjudication_changed",
+    "novel_insight_count",
+    "zero_novel_insight_cycle",
+    "consecutive_zero_novel_insight_cycles",
+    "counter_reset_reason",
+    "unresolved_high_priority_branches",
+    "blocked_claims_requiring_search",
+    "cycle_auditor",
+    "audit_timestamp"
+  ],
+  "cycle_decision_logic": {
+    "zero_novel_insight_cycle": "true only after deduplication, study-family linkage, extraction, validity audit, contradiction search, temporal audit, genetics/preclinical audit, BPSD audit, and model comparison all report no qualifying novel insight",
+    "increment": "If zero_novel_insight_cycle is true, increment consecutive_zero_novel_insight_cycles by 1.",
+    "reset": "If any qualifying novel insight is verified, set consecutive_zero_novel_insight_cycles to 0 and record the insight category and provenance.",
+    "saturate": "Scientific saturation may be declared only when consecutive_zero_novel_insight_cycles >= 3 and all additional stop conditions are satisfied."
+  },
+  "additional_stop_conditions": [
+    "pivotal backward and forward citation chasing complete within available access",
+    "sentinel retrieval audited and unexplained sentinel misses resolved or documented",
+    "no unresolved high-priority branch has an executable search still pending",
+    "central blocked claims are resolved or explicitly retained as blocked after targeted search",
+    "remaining temporal onset questions are classified as unresolved rather than inferred",
+    "measurement-validity issues affecting central claims have been searched and adjudicated",
+    "genetic and preclinical variant-to-function branches have been searched to the same saturation criterion where relevant",
+    "BPSD phenotype branches have been searched to the same saturation criterion where relevant",
+    "contradictory, null, replication, unpublished, correction, and retraction streams have been audited",
+    "the three zero-insight cycles are consecutive completed cycles, not partial or failed runs"
+  ],
+  "resource_guard": {
+    "soft_generation_review_point": 12,
+    "rule": "The review point is not a saturation cap. If reached before three consecutive zero-novel-insight cycles, require an explicit resource decision. If execution stops for cost, access, time, API, or computational limits, label the run RESOURCE_LIMITED_NOT_SATURATED and report the current zero-insight streak.",
+    "never_label_resource_exhaustion_as_saturation": true
+  },
+  "required_outputs": [
+    "cycle_novelty_audit.csv",
+    "saturation_trace.json",
+    "stopping_decision.md"
+  ]
+}
