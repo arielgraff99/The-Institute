@@ -1,0 +1,13 @@
+record_id,result_or_claim,framework,pilot_judgment,main_reason,formal_assessment_complete
+R001,CRP-by-drug interaction in GENDEP,RoB2 plus secondary biomarker screen,SOME_CONCERNS,Randomized treatment allocation strengthens interaction inference but biomarker analysis was secondary and pilot did not verify full prespecification,false
+R002,Baseline inflammatory mRNA predicts nonresponse in GENDEP,domain biomarker checklist,HIGH_CONCERN_FOR_CONFIRMATORY_USE,Small subset with many markers and companion-publication dependence; discovery-level finding,false
+R003,CRP informs CO-MED treatment selection,RoB2 plus moderator-analysis screen,SOME_CONCERNS,Randomized parent trial but biomarker moderator was secondary and parent trial was not inflammation-guided,false
+R004,EMBARC CRP predicts outcome,RoB2 plus moderator-analysis screen,SOME_CONCERNS,Large prospective randomized parent trial but reported effect depended on sex subgroup and was not uniform overall,false
+R005,CRP elevated in established TRD,ROBINS-E,HIGH_CONCERN_FOR_CAUSAL_INFERENCE,Cross-sectional resistance status precedes biomarker measurement and major metabolic/phenotypic confounding remains,false
+R006,Infliximab benefit moderated by baseline CRP,RoB2 plus subgroup-analysis screen,SOME_CONCERNS,No overall treatment effect; small high-CRP subgroup; response-rate contrast not statistically significant,false
+R007,Tocilizumab improves difficult-to-treat depression with inflammation,RoB2,SOME_CONCERNS_DUE_IMPRECISION,Randomized and double blind but n=30 and primary outcome nonsignificant; exploratory signals cannot be confirmatory,false
+R008,Standard inflammatory markers do not predict response in Qatar cohort,ROBINS-E,MODERATE_CONCERN,Prospective design is useful but treatment heterogeneity and observational confounding remain,false
+R009,Inflammatory factors do not predict response in small Chinese cohort,ROBINS-E plus biomarker checklist,HIGH_IMPRECISION,Small sample and multiple biomarkers reduce reliability of null/positive distinctions,false
+R010,2015 inflammation-response meta-analysis,ROBIS or AMSTAR2,MODERATE_CONCERN_PILOT,Older heterogeneous evidence base; full source-level duplication and missing-evidence audit not performed,false
+R011,2026 Hummad pooled OR 2.11,ROBIS or AMSTAR2 plus study-family audit,HIGH_CONCERN_FOR_CONFIRMATORY_USE,Unregistered protocol; heterogeneous thresholds/confounding; multiple publications from same parent study family; mixed causal questions,false
+R012,First-episode/drug-naive cytokine meta-analysis,ROBIS or AMSTAR2,MODERATE_CONCERN_PILOT,Supports early inflammation but is not designed to predict future resistance and cannot establish TRD specificity,false
