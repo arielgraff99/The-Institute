@@ -1,0 +1,8 @@
+{
+  "biological_records": 17,
+  "temporality_counts": {"ESTABLISHED_TRD_CORRELATE": 6, "MIXED_OR_UNKNOWN": 5, "POST_TREATMENT_OR_CONSEQUENCE_UNCERTAIN": 1, "PREDISPOSING_OR_BASELINE": 1, "PRE_RESISTANCE_PREDICTOR": 4},
+  "pre_resistance_or_baseline_records": ["DEP015", "DEP017", "DEP018", "DEP033", "DEP034"],
+  "post_resistance_or_consequence_uncertain_records": ["DEP011", "DEP012", "DEP013", "DEP016", "DEP019", "DEP020", "DEP023"],
+  "mixed_or_unknown_records": ["DEP014", "DEP021", "DEP022", "DEP032", "DEP035"],
+  "ontology_implication": "Pretreatment predictors receive greater weight for claims that resistance reflects a pre-existing disease/endotype. Established-TRD correlates are retained but cannot by themselves distinguish cause from consequence of illness or treatment."
+}
