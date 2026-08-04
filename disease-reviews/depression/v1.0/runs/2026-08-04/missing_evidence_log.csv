@@ -1,0 +1,8 @@
+id,gap,description,priority
+ME01,Pretreatment multi-modal classifier,No externally validated treatment-naive first-episode classifier predicts future failure of >=2 adequate treatments across settings.,DECISIVE
+ME02,Adherence and pharmacokinetics,"Most TRD biomarker cohorts do not rigorously verify adherence, serum exposure, metabolism or drug interactions before resistance assignment.",HIGH
+ME03,Biomarker-by-treatment interaction replication,Inflammation and other biomarkers have candidate treatment interactions but lack repeated prospective biomarker-stratified validation sufficient for clinical utility.,HIGH
+ME04,Stable biological boundary,No reproducible categorical biological discontinuity separating TRD from other MDD has been established.,DECISIVE
+ME05,Endotype external validation,"Candidate immune, metabolic, circuit, transcriptomic and genetic subgroups require external prospective validation and cross-platform replication.",HIGH
+ME06,Socioeconomic/access harmonization,"Need prospective measurement of access, affordability, psychotherapy/neuromodulation availability, clinician pathway and treatment delay to quantify system-created resistance.",HIGH
+ME07,Historical target-family holdout,Formal holdout requires re-deriving historical framework excluding psychiatric comparators; no alternate frozen artifact exists yet.,METHOD
