@@ -1,0 +1,45 @@
+{
+  "run_date": "2026-08-04",
+  "module": "historical-disease-splitting",
+  "framework_version_created": "0.1",
+  "execution_environment": "ChatGPT web-enabled research plus GitHub connector",
+  "model_name": "GPT-5.6 Thinking",
+  "model_version": null,
+  "historical_cases_in_matrix": 21,
+  "accepted_or_operationally_accepted_cases": 16,
+  "failed_merged_or_contested_controls": 5,
+  "exact_queries_recorded_after_log_normalization": 29,
+  "additional_initial_reconnaissance_queries": "not counted because exact query strings were not retained after conversation-context compaction; their evidence was used only where source identity remained verifiable",
+  "image_queries_recorded": 1,
+  "database_result_counts": null,
+  "database_result_count_reason": "The web interface did not expose reproducible database-level result counts; no counts were invented.",
+  "input_tokens": null,
+  "output_tokens": null,
+  "token_count_reason": "Provider-reported per-role/per-search token telemetry was not exposed in this environment; no token estimates were invented.",
+  "estimated_cost_usd": null,
+  "cost_reason": "No provider billing telemetry or reliable per-call token counts were exposed.",
+  "wall_time_seconds": null,
+  "wall_time_reason": "No reliable run-level wall-time telemetry exposed.",
+  "failed_calls": [
+    {
+      "type": "python_analysis_helper",
+      "count": 1,
+      "effect": "No scientific data lost; structured files were assembled directly through GitHub after the helper execution reset."
+    },
+    {
+      "type": "web_domain_robots_block",
+      "count": 1,
+      "effect": "One congress.gov retrieval path was blocked, but alternate indexed Congress/NIH records were returned in the same search and used."
+    }
+  ],
+  "retry_count": 0,
+  "coverage_limits": [
+    "Purposive historical evidence map rather than exhaustive systematic history of all medical disease reclassification",
+    "Web-accessible evidence and predominantly English-language sources",
+    "Uneven historical scholarship across conditions",
+    "Residual Western/high-income-country representation despite China and West Africa examples",
+    "No quantitative historical GDP, national research-expenditure, or war-intensity covariate model in v0.1",
+    "Context attribution is qualitative and directness-labelled rather than assigned unsupported causal percentages"
+  ],
+  "reproducibility_note": "All final criteria and contextual controls are versioned in the frozen framework. Future historical additions must create a new framework version rather than modifying v0.1 silently."
+}
