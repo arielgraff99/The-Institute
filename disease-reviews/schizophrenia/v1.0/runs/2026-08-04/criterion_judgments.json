@@ -1,0 +1,47 @@
+{
+  "DISTINCT_DISEASE": {
+    "U01": "PARTIALLY_MET",
+    "U02": "PARTIALLY_MET",
+    "U03": "NOT_MET",
+    "U04": "PARTIALLY_MET",
+    "U05": "PARTIALLY_MET",
+    "D01": "NOT_MET",
+    "U08": "NOT_MET"
+  },
+  "BIOLOGICAL_SUBTYPE_OR_ENDOTYPE_GLOBAL_SCHIZOPHRENIA": {
+    "U01": "PARTIALLY_MET",
+    "U02": "PARTIALLY_MET",
+    "U03": "NOT_MET",
+    "U04": "PARTIALLY_MET",
+    "U05": "PARTIALLY_MET",
+    "E01": "NOT_MET",
+    "U08": "PARTIALLY_MET"
+  },
+  "DIMENSION_OR_SPECTRUM": {
+    "U01": "MET",
+    "U02": "MET",
+    "U04": "MET",
+    "U05": "PARTIALLY_MET",
+    "Q01": "MET",
+    "Q02": "MET"
+  },
+  "DISEASE_STAGE": {
+    "U01": "PARTIALLY_MET",
+    "U02": "PARTIALLY_MET",
+    "U04": "MET",
+    "U05": "PARTIALLY_MET",
+    "S01": "PARTIALLY_MET"
+  },
+  "TREATMENT_RESPONSE_STATE_TRS": {
+    "U01": "MET",
+    "U02": "MET",
+    "U04": "MET",
+    "R01": "MET",
+    "R02": "PARTIALLY_MET"
+  },
+  "OPERATIONAL_CLINICAL_CATEGORY": {
+    "U01": "MET",
+    "U07": "MET",
+    "O01": "MET"
+  }
+}
