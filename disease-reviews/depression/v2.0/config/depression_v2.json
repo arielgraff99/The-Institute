@@ -1,0 +1,21 @@
+{
+  "project": "Depression Disease-Specific Review Module",
+  "version": "2.0",
+  "parent_version": "1.0",
+  "run_date": "2026-08-04",
+  "target_disorder": "Major depressive disorder",
+  "focus": "Treatment resistance within depression",
+  "historical_framework_version": "0.2",
+  "historical_framework_immutable": true,
+  "five_priority_modules": [
+    "TREATMENT_TRAJECTORY_REPRESENTATION",
+    "TEMPORALITY_ENGINE",
+    "PSEUDORESISTANCE_ALTERNATIVE_CAUSE_ENGINE",
+    "ENDOTYPES_INDEPENDENT_OF_TRD",
+    "NONPSYCHIATRIC_HISTORICAL_HOLDOUT"
+  ],
+  "trajectory_states": ["PRE_TREATMENT","FIRST_LINE","SECOND_LINE","MULTIPLE_FAILURES","ADVANCED_INTERVENTION","POST_ADVANCED_INTERVENTION","MIXED_OR_UNKNOWN"],
+  "temporality_roles": ["PREDISPOSING_OR_BASELINE","PRE_RESISTANCE_PREDICTOR","EMERGING_RESISTANCE","ESTABLISHED_TRD_CORRELATE","POST_TREATMENT_OR_CONSEQUENCE_UNCERTAIN","MIXED_OR_UNKNOWN"],
+  "pseudoresistance_levels": ["LOW","MODERATE","HIGH","UNKNOWN"],
+  "endotype_scopes": ["MDD_WIDE","CROSS_CUTTING_MDD_TRD","TRD_ENRICHMENT_ONLY","NOT_ENDOTYPE_EVIDENCE"]
+}
