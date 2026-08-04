@@ -1,0 +1,13 @@
+{
+  "project":"Depression Disease-Specific Review Module",
+  "version":"1.0",
+  "run_date":"2026-08-04",
+  "target_disorder":"Major depressive disorder",
+  "proposed_division":"Treatment-responsive/non-resistant MDD versus treatment-resistant depression (TRD)",
+  "primary_question":"What scientific representation best explains heterogeneity within major depression, with particular attention to treatment resistance: distinct disease, biological endotype, dimension/spectrum, disease stage, treatment-response state, operational category, or multiaxial combination?",
+  "historical_framework_version":"0.2",
+  "historical_framework_immutable":true,
+  "evidence_mode":"sentinel implementation run using prior Institute depression evidence plus current web-updated sentinel evidence; not exhaustive systematic review",
+  "tracks":["ALL_RELEVANT_EVIDENCE","HIGHER_CONFIDENCE_EVIDENCE"],
+  "timing_codes":{"T0":"before depression onset","T1":"treatment-naive depressed","T2":"before adequate treatment/resistance","T3":"during emergence of resistance","T4":"established TRD","T5":"after extensive treatment exposure","T6":"after advanced intervention"}
+}
