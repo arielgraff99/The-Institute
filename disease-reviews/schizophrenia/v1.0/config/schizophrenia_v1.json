@@ -1,0 +1,25 @@
+{
+  "project": "Schizophrenia Subtype Review Module",
+  "version": "1.0",
+  "run_date": "2026-08-04",
+  "target_disorder": "Schizophrenia spectrum / schizophrenia syndrome",
+  "primary_question": "Which representations of heterogeneity within schizophrenia are scientifically supported: distinct diseases, biological endotypes/biotypes, dimensions/spectra, disease stages, treatment-response states, operational categories, or a composite multiaxial structure?",
+  "historical_framework_version": "0.2",
+  "historical_framework_immutable": true,
+  "target_family_holdout": "Exclude HIST008 and HIST035 from historical support; also report stricter non-psychiatric sensitivity excluding HIST019.",
+  "candidate_structures": [
+    "TRADITIONAL_CLINICAL_SUBTYPES",
+    "TREATMENT_RESISTANT_SCHIZOPHRENIA",
+    "CLOZAPINE_RESISTANT_SCHIZOPHRENIA",
+    "DEFICIT_PRIMARY_NEGATIVE_SYMPTOM_PHENOTYPE",
+    "COGNITIVE_SUBTYPES",
+    "PSYCHOSIS_BIOTYPES",
+    "IMMUNE_INFLAMMATORY_ENDOTYPES",
+    "NEUROIMAGING_SUBTYPES",
+    "COMPOSITE_MULTIAXIAL"
+  ],
+  "tracks": [
+    "ALL_RELEVANT_EVIDENCE",
+    "HIGHER_CONFIDENCE_EVIDENCE"
+  ]
+}
