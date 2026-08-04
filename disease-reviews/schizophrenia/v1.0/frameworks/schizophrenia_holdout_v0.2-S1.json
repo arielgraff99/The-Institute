@@ -1,0 +1,15 @@
+{
+  "name": "Schizophrenia target-family holdout",
+  "base_framework": "Historical Disease-Splitting Framework v0.2",
+  "excluded_historical_cases": [
+    "HIST008",
+    "HIST035"
+  ],
+  "stricter_nonpsychiatric_sensitivity_excludes": [
+    "HIST008",
+    "HIST019",
+    "HIST035"
+  ],
+  "rule": "Criteria remain unchanged; historical support for interpretation is rechecked without schizophrenia/psychosis cases. Target-specific conclusions cannot cite excluded cases as precedent support.",
+  "result": "All promoted scientific criteria retain non-target-family support; schizophrenia classification unchanged under holdout."
+}
