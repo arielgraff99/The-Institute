@@ -1,0 +1,25 @@
+criterion_id,candidate,source_pattern,face_validity,scientific_coherence,successful_vs_failed_discrimination,promotion_status,final_role
+U01,"Operationalizable reproducible discriminator","Successful classifications require reliably identifiable membership; failed symptom/pathology subtypes often lacked reproducibility",HIGH,HIGH,HIGH,PROMOTED,UNIVERSAL
+U02,"Independent replication and transportability","Durable entities replicated beyond original institution/cohort; failed splits often did not",HIGH,HIGH,HIGH,PROMOTED,UNIVERSAL
+U03,"Boundary robustness","Low-renin HTN, old schizophrenia subtypes, pRCC type 1/2 and EF thresholds expose arbitrary/context-dependent boundaries",HIGH,HIGH,HIGH,PROMOTED,UNIVERSAL_WITH_DIMENSION_TEST
+U04,"Temporal coherence appropriate to class","Pretreatment disease, stage and post-treatment resistance have different legitimate temporal structures",HIGH,HIGH,HIGH,PROMOTED,UNIVERSAL
+U05,"Specificity beyond alternatives","Severity, treatment, adherence, comorbidity, access, geography and measurement can mimic subgrouping",HIGH,HIGH,HIGH,PROMOTED,UNIVERSAL
+U06,"Natural-history/longitudinal coherence","Strong disease/stage claims often have coherent course; unstable symptom subtypes frequently fail",HIGH,HIGH,MODERATE_HIGH,PROMOTED,UNIVERSAL_CLASS_SENSITIVE
+U07,"Clinical decision utility","Many accepted categories improve decisions but utility can exist without separate biology",HIGH,HIGH,MODERATE,PROMOTED,SUPPORTIVE_UNIVERSAL
+U08,"Convergent multi-domain coherence","CML/APL/GIST/NMOSD/MODY/ovarian carcinoma show convergent domains; several failed splits rely on one weak/contextual discriminator",HIGH,HIGH,HIGH,PROMOTED,BIOLOGICAL_ONTOLOGY_SAFEGUARD
+U09,"Positive definition / residual-category caution","NT2, seronegative RA, T2-low asthma and former pRCC type 2 show that not-A may remain heterogeneous",HIGH,HIGH,HIGH,PROMOTED,CONDITIONAL_SAFEGUARD
+Q01,"Reproducible ordered gradient","Leprosy spectrum and other continua show coherent noncategorical structure",HIGH,HIGH,HIGH,PROMOTED,DIMENSION_OR_SPECTRUM_CORE
+Q02,"Threshold transparency","HF EF and imaging/symptom classifications show clinical cut-points can be useful without natural discontinuities",HIGH,HIGH,HIGH,PROMOTED,DIMENSION_OR_SPECTRUM_CORE
+D01,"Intrinsic etiologic/pathological/genetic/stable mechanistic distinction","Viral hepatitis, CML, GIST, MODY, NMOSD and H pylori ulcer examples",HIGH,HIGH,HIGH,PROMOTED,DISTINCT_DISEASE_CORE
+E01,"Reproducible biological pathway/endotype coherence","HER2, asthma T2-high, driver-defined NSCLC and AAV biology",HIGH,HIGH,HIGH,PROMOTED,ENDOTYPE_CORE
+S01,"Longitudinal transition/time ordering","MS phenotypes, CRPC and axial SpA show stage logic differs from stable disease identity",HIGH,HIGH,HIGH,PROMOTED,STAGE_CORE
+R01,"Adequate treatment exposure before resistance assignment","Drug-resistant epilepsy, MDR-TB and CRPC",HIGH,HIGH,HIGH,PROMOTED,RESISTANCE_CORE
+R02,"Pseudoresistance/exposure/adherence/system causes assessed","Treatment-state validity can be distorted by delivery, adherence, drug quality or inadequate regimen",HIGH,HIGH,HIGH,PROMOTED,RESISTANCE_CORE
+H01,"Expert consensus/regulatory recognition","Present in many accepted and failed/operational classifications",LOW_FOR_ONTOLOGY,LOW_FOR_ONTOLOGY,LOW,NOT_PROMOTED,CONTEXT_OR_ADOPTION_MARKER
+H02,"Historical persistence","Long persistence occurred in both valid and weak classifications",LOW,LOW,LOW,NOT_PROMOTED,HISTORICAL_OBSERVATION_ONLY
+H03,"War/political/economic context","Can accelerate viral-hepatitis research or suppress APL research",LOW_FOR_ONTOLOGY,HIGH_FOR_DISCOVERY_HISTORY,NONDISCRIMINATING_FOR_VALIDITY,NOT_PROMOTED,CONTEXT_CONTROL
+H04,"Funding/institutional/technology availability","Enables both successful CML/GIST and unsuccessful low-renin subgrouping",LOW_FOR_ONTOLOGY,HIGH_FOR_OPPORTUNITY,NONDISCRIMINATING_FOR_VALIDITY,NOT_PROMOTED,CONTEXT_CONTROL
+H05,"Commercial/regulatory/reimbursement incentives","Can accelerate valid targeted subtypes or reinforce operational thresholds",LOW_FOR_ONTOLOGY,HIGH_FOR_ADOPTION,NONDISCRIMINATING_FOR_VALIDITY,NOT_PROMOTED,CONTEXT_CONTROL
+H06,"Prestige/authority/professional structure","Can preserve weak classifications such as historical dementia/psychiatric boundaries",LOW_FOR_ONTOLOGY,HIGH_AS_BIAS_FLAG,NEGATIVE_CONTROL_VALUE,NOT_PROMOTED,CONTEXT_BIAS_FLAG
+H07,"Research-opportunity asymmetry","Type 5 diabetes and geographically concentrated diseases show sparse evidence may reflect neglected populations",LOW_FOR_POSITIVE_ONTOLOGY,HIGH_FOR_NEGATIVE_INFERENCE,HIGH_AS_CONTEXT_MODIFIER,PROMOTED_AS_CONTROL,CONTEXT_CONTROL_ONLY
+H08,"Jurisdictional adoption divergence","WHO/national/professional classifications can differ for reasons beyond biology",LOW_FOR_ONTOLOGY,HIGH_FOR_ADOPTION_HISTORY,HIGH_AS_CONTEXT_MODIFIER,PROMOTED_AS_CONTROL,CONTEXT_CONTROL_ONLY
