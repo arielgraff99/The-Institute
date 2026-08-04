@@ -1,0 +1,24 @@
+{
+  "run_id": "mental_illness_umbrella_v0.1_seed_2026-08-04",
+  "status": "STARTED_SEED_PASS",
+  "historical_framework_version": "0.2",
+  "historical_framework_immutable": true,
+  "root_entity": "mental illness / psychiatric psychopathology",
+  "seed_candidate_nodes": 14,
+  "seed_evidence_records": 10,
+  "seed_search_queries": 8,
+  "downstream_modules_reused_as_evidence": [
+    "depression/v2.0 recursive",
+    "schizophrenia/v1.0 recursive"
+  ],
+  "current_root_classification": "COMPOSITE_MULTIAXIAL",
+  "saturation_met": false,
+  "next_branches": [
+    "schizophrenia-bipolar / affective psychosis",
+    "internalizing",
+    "neurodevelopmental",
+    "compulsive",
+    "substance-use / externalizing / personality",
+    "etiologic peel-off registry"
+  ]
+}
