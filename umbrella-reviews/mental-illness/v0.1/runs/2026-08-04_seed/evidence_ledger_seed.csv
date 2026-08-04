@@ -1,0 +1,11 @@
+record_id,domain,level,finding,source_id,role
+MI_E001,cross_disorder_genomics,transdiagnostic,"Five latent genomic factors across 14 disorders: Compulsive, schizophrenia-bipolar, neurodevelopmental, internalizing, substance-use; about 66% of genetic variance explained on average",Nature 2025 doi:10.1038/s41586-025-09820-3,DIRECT_EVIDENCE
+MI_E002,clinical_neuroscience,transdiagnostic,"Systematic review of 164 neuroimaging studies found replicated correlates for p-factor, externalizing, thought disorder, internalizing, distress and depression dimensions",PMID:39480338,CONVERGENT_SUPPORT
+MI_E003,symptom_structure,transdiagnostic,"Real-world outpatient DSM cross-cutting symptom data showed shared general psychopathology plus mood/anxiety/depression/psychosis/substance/distress-disconnection dimensions",PMID:42038083,CONVERGENT_SUPPORT
+MI_E004,p_factor,transdiagnostic,"General psychopathology factor is reproducible across modelling approaches but its biological/clinical meaning requires criterion validation",PMID:38236494,CAUTION
+MI_E005,externalizing,transdiagnostic,"Disinhibited and antagonistic externalizing spectra have substantial validity/utility literature and cut across substance and personality diagnoses",PMID:34002506,CONVERGENT_SUPPORT
+MI_E006,neurodevelopmental,transdiagnostic,"ADHD symptom components map differently to externalizing, neurodevelopmental and internalizing spectra, arguing against a unitary placement",PMID:39679963,CONTRADICTORY_TO_SIMPLE_TREE
+MI_E007,psychosis_nosology,transdiagnostic,"HiTOP psychosis superspectrum structure has been critiqued; thought disorder/detachment arrangement is not settled",PMID:38991419,CONTRADICTORY_TO_SIMPLE_TREE
+MI_E008,etiology,etiologic,"Autoimmune psychosis criteria and neuropsychiatric checklist support identifiable immune etiologies in selected psychiatric presentations",PMID:39987981; PMID:31669058,DIRECT_EVIDENCE_FOR_ETIOLOGIC_PEEL_OFF
+MI_E009,depression,target_module,"Recursive MDD/TRD review supports multiaxial structure and MDD-wide endotypes but not one TRD disease",Institute depression v2.0 recursive,DOWNSTREAM_MODULE
+MI_E010,schizophrenia,target_module,"Recursive schizophrenia review supports etiologic exceptions, transdiagnostic psychosis endotypes, dimensions and TRS treatment state",Institute schizophrenia v1.0 recursive,DOWNSTREAM_MODULE
