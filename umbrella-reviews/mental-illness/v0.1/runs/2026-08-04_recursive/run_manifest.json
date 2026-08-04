@@ -1,0 +1,52 @@
+{
+  "run_id": "mental_illness_umbrella_v0.1_recursive_2026-08-04",
+  "module": "Mental Illness Umbrella Review",
+  "module_version": "0.1",
+  "run_type": "RECURSIVE_MULTI_BRANCH_TO_SATURATION",
+  "base_seed_run": "umbrella-reviews/mental-illness/v0.1/runs/2026-08-04_seed/",
+  "historical_framework": "historical-disease-splitting/run_2026-08-04_v0.2/frozen_disease_splitting_framework_v0.2.json",
+  "historical_framework_version": "0.2",
+  "historical_framework_immutable": true,
+  "downstream_modules_used_as_evidence_not_criteria": [
+    "disease-reviews/depression/v2.0/runs/2026-08-04_recursive/",
+    "disease-reviews/schizophrenia/v1.0/runs/2026-08-04_recursive/"
+  ],
+  "branches": [
+    "A_SCHIZOPHRENIA_BIPOLAR_AFFECTIVE_PSYCHOSIS",
+    "B_INTERNALIZING",
+    "C_NEURODEVELOPMENTAL",
+    "D_COMPULSIVE",
+    "E_EXTERNALIZING_SUBSTANCE_PERSONALITY",
+    "F_ETIOLOGIC_PEEL_OFF"
+  ],
+  "selected_evidence_records": 33,
+  "selected_study_family_ids": 33,
+  "web_search_batches": 12,
+  "web_search_queries": 72,
+  "recursive_cycles": 6,
+  "last_material_refinement_cycle": 3,
+  "no_change_cycles_after_refinement": [4, 5, 6],
+  "saturation_rule": "At least three consecutive cycles after the last material refinement without a new study family that changes a branch-level class conclusion.",
+  "saturation_met": true,
+  "saturation_scope": "branch-level classification within web-accessible evidence map",
+  "preferred_root_classification": "COMPOSITE_MULTIAXIAL_NETWORK",
+  "principal_outputs": [
+    "final_classification_recursive.md",
+    "branch_adjudication.csv",
+    "evidence_ledger.csv",
+    "architecture_v0.1_recursive.json",
+    "saturation_log.csv",
+    "process_metrics.json",
+    "search_provenance.md",
+    "run_manifest.json"
+  ],
+  "limitations": [
+    "Web-accessible evidence map rather than licensed-database systematic review.",
+    "Selected high-information evidence ledger rather than every screened publication.",
+    "No duplicate human screening.",
+    "No study-family-reconstructed quantitative meta-analysis.",
+    "Reviews and meta-analyses can overlap primary cohorts.",
+    "Some current evidence is preprint-level and is labeled as such in interpretation.",
+    "Token, cost and wall-time telemetry unavailable and intentionally not fabricated."
+  ]
+}
