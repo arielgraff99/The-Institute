@@ -1,0 +1,7 @@
+record_id,claim,source_id,role
+SB001,"SCZ and bipolar share a latent genomic factor with extensive common-variant overlap",Nature 2025 doi:10.1038/s41586-025-09820-3,DIRECT_EVIDENCE
+SB002,"Current genomics review emphasizes shared and disorder-specific architecture across SCZ BD and MDD",Nature Reviews Genetics 2025 doi:10.1038/s41576-025-00843-0,CONVERGENT_SUPPORT
+SB003,"B-SNIP biomarkers do not support neurobiological distinctiveness of conventional psychosis diagnoses and instead yield transdiagnostic Biotypes",PMID:39562461,DIRECT_EVIDENCE
+SB004,"Schizoaffective interrater reliability is lower than schizophrenia bipolar and unipolar depression",PMID:27461400,BOUNDARY_CAUTION
+SB005,"First-episode diagnostic stability is high for schizophrenia and affective-spectrum psychoses but lower for schizoaffective/boundary categories",PMID:26980142,CONVERGENT_SUPPORT
+SB006,"Recent genomic decomposition identifies shared psychosis plus schizophrenia-predominant and bipolar-predominant components",PMID:42465921,EMERGING_PREPRINT
