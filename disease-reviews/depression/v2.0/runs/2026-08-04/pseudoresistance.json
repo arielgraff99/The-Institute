@@ -1,0 +1,9 @@
+{
+  "vulnerability_counts": {"HIGH": 5, "LOW": 8, "MODERATE": 9, "UNKNOWN": 13},
+  "high_vulnerability_records": ["DEP023", "DEP025", "DEP026", "DEP028", "DEP029"],
+  "records_addressing_adherence": ["DEP003", "DEP005", "DEP029"],
+  "records_addressing_treatment_adequacy": ["DEP001", "DEP002", "DEP003", "DEP004", "DEP006", "DEP017", "DEP020", "DEP027", "DEP028", "DEP030", "DEP031", "DEP034"],
+  "R02_recomputed_status": "PARTIALLY_MET",
+  "alternative_cause_classes": ["INADEQUATE_EXPOSURE", "NONADHERENCE", "INTOLERANCE", "PHARMACOKINETIC_VARIABILITY", "MISDIAGNOSIS_OR_BIPOLARITY", "MEDICAL_OR_SUBSTANCE_CAUSE", "TREATMENT_UNAVAILABLE_OR_DELAYED", "CLINICIAN_OR_HEALTH_SYSTEM_FACTOR"],
+  "interpretation": "Pseudoresistance is not a nuisance variable; it is a competing causal explanation. Current literature only partially verifies adequate exposure and adherence, so a treatment-resistance-state claim remains conditional on better exposure verification."
+}
