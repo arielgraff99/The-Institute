@@ -1,0 +1,66 @@
+{
+  "run_name": "Historical Disease-Splitting v0.2 Stress Test",
+  "run_date": "2026-08-04",
+  "base_framework": "0.1",
+  "output_framework": "0.2",
+  "review_type": "purposive systematic-style historical evidence map and framework stress test",
+  "historical_cases": {
+    "inherited_v0_1": 21,
+    "new_v0_2": 19,
+    "total": 40,
+    "accepted_operational_or_emerging_supported": 28,
+    "failed_merged_contested_residual_or_materially_revised": 12
+  },
+  "search": {
+    "web_query_batches": 11,
+    "web_queries_executed": 52,
+    "search_log_type": "normalized reconstruction from retained run context",
+    "raw_query_provenance_complete": false,
+    "raw_query_limitation": "The tool context was compacted before final artifact assembly; every exact raw query string was not recoverable. The search log therefore labels reconstructed normalized queries rather than falsely representing them as byte-exact raw tool calls.",
+    "result_counts_reported": false,
+    "result_count_reason": "No reproducible exported result counts were retained; counts are intentionally not invented."
+  },
+  "framework_changes": {
+    "new_positive_classification_classes": 1,
+    "new_universal_or_conditional_scientific_safeguards": 2,
+    "new_structural_rules": 1,
+    "new_context_controls": 2,
+    "new_anti_circularity_sensitivity_rules": 1,
+    "changes": [
+      "DIMENSION_OR_SPECTRUM",
+      "U08_CONVERGENT_MULTI_DOMAIN_COHERENCE",
+      "U09_POSITIVE_DEFINITION_RESIDUAL_CAUTION",
+      "COMPOSITE_MULTIAXIAL",
+      "H07_RESEARCH_OPPORTUNITY_ASYMMETRY",
+      "H08_JURISDICTIONAL_ADOPTION_DIVERGENCE",
+      "TFH01_TARGET_FAMILY_HOLDOUT"
+    ]
+  },
+  "model_execution": {
+    "independent_models": 1,
+    "role_execution": "sequential isolated reasoning/search passes within one model environment",
+    "independent_agent_agreement_claimed": false
+  },
+  "saturation": {
+    "status": "LOCAL_METHODOLOGICAL_STABILITY_NOT_EXHAUSTIVE_SATURATION",
+    "description": "After challenge cases spanning spectra, residual groups, revised classifications and context-constrained populations, no additional universal criterion was identified beyond U08/U09 and structural/context amendments. The run does not claim exhaustive historical saturation and did not use a formal multi-cycle no-new-reference stopping count."
+  },
+  "telemetry": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "estimated_cost": null,
+    "currency": null,
+    "wall_time_seconds": null,
+    "pricing_date": null,
+    "reason_null": "These metrics were not exposed reliably by the current execution environment and are not estimated."
+  },
+  "tool_failures": [],
+  "integrity_notes": [
+    "Classification events are historical comparators, not independent epidemiological effect estimates.",
+    "Nested cases such as Burkitt lymphoma discovery and later Burkitt subtype revision are intentionally separate classification events, not counted as independent biological replications.",
+    "Contemporary entities such as MOGAD, ANCA-based vasculitis classification and type 5 diabetes are explicitly labeled evolving or contested where appropriate.",
+    "Socioeconomic and political context is used to modify inference about discovery opportunity and adoption timing, not as positive evidence of biological disease separation.",
+    "No exact search-result counts, token counts, cost estimates or causal percentages for science-versus-context were invented."
+  ]
+}
