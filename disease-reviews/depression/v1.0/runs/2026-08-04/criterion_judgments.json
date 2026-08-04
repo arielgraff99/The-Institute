@@ -1,0 +1,152 @@
+{
+  "tracks": {
+    "ALL_RELEVANT_EVIDENCE": {
+      "DISTINCT_DISEASE": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP004"]},
+          "U02": {"status": "PARTIALLY_MET", "evidence": ["DEP010","DEP012","DEP016"]},
+          "U03": {"status": "NOT_MET", "evidence": ["DEP004","DEP010","DEP016","DEP021"]},
+          "U04": {"status": "PARTIALLY_MET", "evidence": ["DEP015","DEP017","DEP023"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP005","DEP007","DEP019","DEP026"]},
+          "D01": {"status": "NOT_MET", "evidence": ["DEP011","DEP012","DEP014"]},
+          "U06": {"status": "MET", "evidence": ["DEP006","DEP008","DEP024","DEP027"]},
+          "U08": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP016","DEP022","DEP023"]},
+          "U09": {"status": "NOT_MET", "evidence": ["DEP004","DEP005","DEP029"]}
+        },
+        "interpretation": "TRD has reproducible clinical/treatment-course features, but no robust pretreatment categorical boundary or stable intrinsic causal/pathological discriminator defines TRD as one disease."
+      },
+      "BIOLOGICAL_SUBTYPE_OR_ENDOTYPE": {
+        "criteria": {
+          "U01": {"status": "PARTIALLY_MET", "evidence": ["DEP015","DEP017","DEP022"]},
+          "U02": {"status": "PARTIALLY_MET", "evidence": ["DEP016","DEP022"]},
+          "U03": {"status": "NOT_MET", "evidence": ["DEP016","DEP021"]},
+          "U04": {"status": "PARTIALLY_MET", "evidence": ["DEP015","DEP017"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP019","DEP021"]},
+          "E01": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP015","DEP022","DEP023"]},
+          "U08": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP016","DEP022","DEP023"]},
+          "U09": {"status": "NOT_MET", "evidence": ["DEP004","DEP005"]}
+        },
+        "interpretation": "Multiple candidate biological endotypes are plausible and some may moderate treatment, but the whole TRD category is not one reproducible endotype; endotypes likely cut across the TRD boundary."
+      },
+      "DIMENSION_OR_SPECTRUM": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP002","DEP004"]},
+          "U02": {"status": "MET", "evidence": ["DEP006","DEP008","DEP010"]},
+          "U04": {"status": "MET", "evidence": ["DEP006","DEP027"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP007","DEP026"]},
+          "Q01": {"status": "MET", "evidence": ["DEP006","DEP008","DEP009","DEP010"]},
+          "Q02": {"status": "MET", "evidence": ["DEP002","DEP004","DEP029"]},
+          "Q03": {"status": "PARTIALLY_MET", "evidence": ["DEP006","DEP008","DEP024"]}
+        },
+        "interpretation": "Resistance behaves substantially as a graded treatment-course/severity/chronicity construct; operational cut-points are useful but no natural discontinuity is established."
+      },
+      "DISEASE_STAGE": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP006","DEP027"]},
+          "U02": {"status": "MET", "evidence": ["DEP006","DEP008","DEP009"]},
+          "U04": {"status": "MET", "evidence": ["DEP006","DEP027"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP005","DEP007","DEP026"]},
+          "S01": {"status": "PARTIALLY_MET", "evidence": ["DEP006","DEP027"]}
+        },
+        "interpretation": "Successive nonresponse has longitudinal ordering and poorer prognosis, supporting a stage-like component, but not every TRD case reflects biological progression rather than baseline endotype or contextual/pseudo-resistance."
+      },
+      "TREATMENT_RESPONSE_STATE": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP004"]},
+          "U02": {"status": "MET", "evidence": ["DEP001","DEP002","DEP030"]},
+          "U04": {"status": "MET", "evidence": ["DEP003","DEP006","DEP027"]},
+          "R01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP030"]},
+          "R02": {"status": "PARTIALLY_MET", "evidence": ["DEP003","DEP005","DEP029"]},
+          "R03": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP015","DEP017","DEP022"]}
+        },
+        "interpretation": "TRD is strongly supported as a treatment-response state, provided adequacy and pseudoresistance are assessed. Objective resistance biology is not yet generalizable."
+      },
+      "OPERATIONAL_CLINICAL_CATEGORY": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP004"]},
+          "U07": {"status": "MET", "evidence": ["DEP024","DEP028","DEP029"]},
+          "O01": {"status": "MET", "evidence": ["DEP001","DEP002","DEP030"]}
+        },
+        "interpretation": "TRD is strongly supported as an operational clinical/regulatory/service category with clear treatment and burden implications."
+      }
+    },
+    "HIGHER_CONFIDENCE_EVIDENCE": {
+      "DISTINCT_DISEASE": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP004"]},
+          "U02": {"status": "PARTIALLY_MET", "evidence": ["DEP010","DEP012","DEP016"]},
+          "U03": {"status": "NOT_MET", "evidence": ["DEP004","DEP010","DEP016"]},
+          "U04": {"status": "PARTIALLY_MET", "evidence": ["DEP015","DEP017"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP005","DEP007","DEP026"]},
+          "D01": {"status": "NOT_MET", "evidence": ["DEP011","DEP012","DEP014"]},
+          "U06": {"status": "MET", "evidence": ["DEP006","DEP008","DEP024","DEP027"]},
+          "U08": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP016","DEP022"]},
+          "U09": {"status": "NOT_MET", "evidence": ["DEP004","DEP005","DEP029"]}
+        },
+        "interpretation": "Higher-confidence evidence does not support TRD as one distinct disease; biological findings remain quantitative, overlapping, heterogeneous, or post-resistance."
+      },
+      "BIOLOGICAL_SUBTYPE_OR_ENDOTYPE": {
+        "criteria": {
+          "U01": {"status": "PARTIALLY_MET", "evidence": ["DEP015","DEP017","DEP022"]},
+          "U02": {"status": "PARTIALLY_MET", "evidence": ["DEP016","DEP022"]},
+          "U03": {"status": "NOT_MET", "evidence": ["DEP016"]},
+          "U04": {"status": "PARTIALLY_MET", "evidence": ["DEP015","DEP017"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP022"]},
+          "E01": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP015","DEP022"]},
+          "U08": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP016","DEP022"]},
+          "U09": {"status": "NOT_MET", "evidence": ["DEP004","DEP005"]}
+        },
+        "interpretation": "Biological endotypes are supported as a research direction and likely exist within depression, but no validated endotype maps cleanly onto global TRD membership."
+      },
+      "DIMENSION_OR_SPECTRUM": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP002","DEP004"]},
+          "U02": {"status": "MET", "evidence": ["DEP006","DEP008","DEP010"]},
+          "U04": {"status": "MET", "evidence": ["DEP006","DEP027"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP007","DEP026"]},
+          "Q01": {"status": "MET", "evidence": ["DEP006","DEP008","DEP009","DEP010"]},
+          "Q02": {"status": "MET", "evidence": ["DEP002","DEP004","DEP029"]},
+          "Q03": {"status": "PARTIALLY_MET", "evidence": ["DEP006","DEP008","DEP024"]}
+        },
+        "interpretation": "A graded resistance/severity/chronicity axis is well supported; the two-failure threshold is operational rather than a demonstrated natural discontinuity."
+      },
+      "DISEASE_STAGE": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP006","DEP027"]},
+          "U02": {"status": "MET", "evidence": ["DEP006","DEP008","DEP009"]},
+          "U04": {"status": "MET", "evidence": ["DEP006","DEP027"]},
+          "U05": {"status": "PARTIALLY_MET", "evidence": ["DEP005","DEP007","DEP026"]},
+          "S01": {"status": "PARTIALLY_MET", "evidence": ["DEP006","DEP027"]}
+        },
+        "interpretation": "A stage-like component is supported, especially accumulated treatment failure and chronicity, but stage is not sufficient as a universal explanation."
+      },
+      "TREATMENT_RESPONSE_STATE": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP004"]},
+          "U02": {"status": "MET", "evidence": ["DEP001","DEP002","DEP030"]},
+          "U04": {"status": "MET", "evidence": ["DEP003","DEP006","DEP027"]},
+          "R01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP030"]},
+          "R02": {"status": "PARTIALLY_MET", "evidence": ["DEP003","DEP005","DEP029"]},
+          "R03": {"status": "PARTIALLY_MET", "evidence": ["DEP011","DEP015","DEP017","DEP022"]}
+        },
+        "interpretation": "The strongest ontologically modest description is a treatment-response state; rigor depends on treatment adequacy, adherence and exclusion of pseudoresistance."
+      },
+      "OPERATIONAL_CLINICAL_CATEGORY": {
+        "criteria": {
+          "U01": {"status": "MET", "evidence": ["DEP001","DEP003","DEP004"]},
+          "U07": {"status": "MET", "evidence": ["DEP024","DEP028","DEP029"]},
+          "O01": {"status": "MET", "evidence": ["DEP001","DEP002","DEP030"]}
+        },
+        "interpretation": "The operational category is strongly supported and has demonstrated clinical, treatment, regulatory and resource-allocation utility."
+      }
+    }
+  },
+  "context_analysis": {
+    "finding": "TRD membership depends partly on treatment availability, adequacy, adherence, provider behavior, socioeconomic disadvantage and health-system pathway. These factors weaken ontological inference from treatment failure but do not make the clinical state unreal.",
+    "evidence": ["DEP005","DEP007","DEP025","DEP026","DEP029","DEP030"]
+  },
+  "holdout_sensitivity": {
+    "status": "PARTIAL_IMPLEMENTATION",
+    "note": "The downstream module uses the frozen v0.2 rules. A formal target-family historical holdout requires a separately re-derived v0.2 framework excluding psychiatric historical comparators; this artifact does not yet exist, so no fabricated holdout result is reported."
+  }
+}
