@@ -1,0 +1,27 @@
+{
+  "state_record_counts": {
+    "ADVANCED_INTERVENTION": 5,
+    "FIRST_LINE": 13,
+    "MIXED_OR_UNKNOWN": 19,
+    "MULTIPLE_FAILURES": 18,
+    "PRE_TREATMENT": 3
+  },
+  "state_study_family_counts": {
+    "ADVANCED_INTERVENTION": 5,
+    "FIRST_LINE": 13,
+    "MIXED_OR_UNKNOWN": 18,
+    "MULTIPLE_FAILURES": 16,
+    "PRE_TREATMENT": 3
+  },
+  "explicit_ordered_records": 39,
+  "longitudinal_stage_evidence_records": [
+    "DEP006",
+    "DEP008",
+    "DEP009",
+    "DEP010",
+    "DEP027",
+    "DEP031",
+    "DEP053"
+  ],
+  "interpretation": "The literature can be represented as a treatment-course trajectory rather than a binary label. Evidence spans pre-treatment, first-line, emerging resistance, established multiple failure, and advanced-intervention states, although many studies remain mixed/retrospective."
+}
