@@ -1,0 +1,13 @@
+family_root,records_or_evidence_stream,independence_note
+BSNIP,"SCZ017;SCZ018;SCZ019;SCZ020;SCZ021;SCZ022;SCZ038","Companion/extension analyses from the B-SNIP program; do not count each publication as an independent biological replication. B-SNIP1 and its replication sample provide within-program replication, while later imaging/familial/genetic analyses provide construct validation."
+BSNIP_ADEPT_PROSPECTIVE,SCZ042,"Prospective new-participant clinical-utility protocol; separate future cohort, but no outcome result yet."
+TRS_DOPAMINE,"SCZ008;SCZ009;SCZ010","Related mechanistic question across separate cohorts/review; review overlaps primary literature and is not independent replication."
+TRS_GENETICS,"SCZ011;SCZ012;SCZ039;SCZ040","Distinct genetic analyses with partially overlapping broader schizophrenia genetic resources possible; interpret as convergent genetic evidence, not four wholly independent disease replications."
+TRS_IMMUNE,"SCZ013;SCZ014;SCZ035","Primary response-stratified cohorts plus systematic review; review overlaps the field and clozapine exposure is a major confounder."
+NEGATIVE_DEFICIT,"SCZ025;SCZ026;SCZ027;SCZ036;SCZ049;SCZ050","Multiple primary/meta-analytic streams; some address deficit syndrome, others negative-symptom dimensions or early-risk populations and therefore should not be collapsed into one ontology claim."
+COGNITIVE_SUBTYPES,"SCZ023;SCZ024;SCZ047","Separate cognitive/subtyping programs; 2026 EF study includes a local validation sample but still needs geographically independent replication."
+IMAGING_SUBTYPES,"SCZ028;SCZ033","Large positive SuStaIn study versus field-level critical review; intentionally retained as contradictory evidence."
+TRS_PROSPECTIVE,"SCZ004;SCZ005;SCZ006;SCZ048","Population, systematic-review and small prospective biomarker cohorts; BIOERES is not yet externally replicated."
+RARE_ETIOLOGY,"SCZ041;SCZ043;SCZ044;SCZ045;SCZ052","Different etiologic mechanisms (GRIN2A, 22q11.2, autoimmune/other rare variants); evidence supports etiologic exceptions, not one common rare-variant subtype."
+CROSS_DISORDER_GENETICS,SCZ046,"Large cross-disorder genomic analysis; independent of B-SNIP phenotype construction and directly relevant to diagnostic-boundary validity."
+OTHER_SENTINEL,"SCZ001-SCZ007;SCZ015-SCZ016;SCZ029-SCZ032","Retain original sentinel family identifiers; no new recursive consolidation was required beyond the families called out above."
