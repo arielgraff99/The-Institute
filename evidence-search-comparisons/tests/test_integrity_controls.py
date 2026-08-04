@@ -7,6 +7,8 @@ from institute_search.appraisal import (
     route_risk_of_bias_tool,
     validate_result_level_appraisal,
 )
+from institute_search.config import RunConfig
+from institute_search.engine import EvidenceSearchEngine
 from institute_search.missing_evidence import (
     MissingEvidenceSignal,
     NegativeEvidenceRecord,
@@ -75,3 +77,54 @@ def test_epistemic_dimensions_not_collapsed():
 def test_material_missing_evidence_sets_concern():
     audit = PublicationBiasAudit(signals=[MissingEvidenceSignal("completed_unpublished", "NCT3", "Completed but no result found", True, "moderate", ("NCT3",))])
     assert audit.concern_level == "high"
+
+
+def _config() -> RunConfig:
+    return RunConfig.model_validate({
+        "project_id": "integrity-demo",
+        "research_question": "Does the integrity engine work?",
+        "scientific_models": [{"id": "A"}, {"id": "B"}, {"id": "C"}],
+    })
+
+
+def test_material_negative_evidence_resets_saturation_streak():
+    engine = EvidenceSearchEngine(_config())
+    engine.ingest_cycle({"generation_number": 0, "novel_insights": []})
+    engine.ingest_cycle({"generation_number": 1, "novel_insights": []})
+    assert engine.state.consecutive_zero_novel_insight_cycles == 2
+    engine.ingest_cycle({
+        "generation_number": 2,
+        "negative_evidence": [{
+            "source_id": "R1",
+            "study_family_id": "F1",
+            "finding_type": "failed_replication",
+            "claim_id": "C1",
+            "summary": "Independent replication was null",
+            "material": True,
+            "provenance": ["PMID:1"],
+        }],
+    })
+    assert engine.state.consecutive_zero_novel_insight_cycles == 0
+    assert engine.state.status == "CONTINUE"
+
+
+def test_integrity_outputs_are_written(tmp_path):
+    engine = EvidenceSearchEngine(_config())
+    engine.ingest_cycle({
+        "generation_number": 0,
+        "risk_of_bias": [{"study_id": "S1", "result_id": "R1", "design": "observational", "overall_judgment": "some_concerns"}],
+        "negative_evidence": [{"source_id": "P1", "study_family_id": "F1", "finding_type": "null", "claim_id": "C1", "summary": "Null result", "material": True, "provenance": ["P1"]}],
+        "missing_evidence_signals": [{"signal_type": "completed_unpublished", "source_id": "NCT1", "description": "Completed without publication", "material": True, "provenance": ["NCT1"]}],
+        "registry_publication_matches": [{"registry_id": "NCT2", "publication_id": "P2", "missing_registered_outcomes": ["agitation"]}],
+        "replication_map": [{"publication_id": "P1", "study_family_id": "F1"}],
+    })
+    out = engine.write_run(tmp_path)
+    for name in [
+        "risk_of_bias.csv",
+        "negative_evidence_ledger.csv",
+        "publication_bias_audit.csv",
+        "registry_publication_matches.csv",
+        "missing_outcomes.csv",
+        "replication_map.csv",
+    ]:
+        assert (out / name).exists()
