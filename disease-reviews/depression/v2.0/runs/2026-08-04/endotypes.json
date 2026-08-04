@@ -1,0 +1,18 @@
+{
+  "mdd_wide_or_crosscutting_candidates": {
+    "CIRCUIT_NEUROIMAGING": ["DEP015", "DEP016"],
+    "GENETIC_LIABILITY": ["DEP011", "DEP012", "DEP014"],
+    "IMMUNOMETABOLIC": ["DEP034"],
+    "INFLAMMATORY_IMMUNE": ["DEP017", "DEP018", "DEP021", "DEP022"],
+    "METABOLIC": ["DEP033"],
+    "NEUROIMAGING_MULTIOMIC": ["DEP032"],
+    "TYPE2_IMMUNE": ["DEP035"]
+  },
+  "candidate_records": 13,
+  "records_with_some_replication_or_validation_signal": ["DEP016", "DEP017", "DEP033"],
+  "records_linked_to_treatment_response_or_moderation": ["DEP017", "DEP034"],
+  "trd_enrichment_only_records": ["DEP013", "DEP019", "DEP020", "DEP023"],
+  "mdd_endotype_structure": "PROVISIONALLY_SUPPORTED",
+  "global_trd_equals_single_endotype": "NOT_SUPPORTED",
+  "interpretation": "Searching MDD independently of the TRD label reveals candidate immune, metabolic, circuit and multi-omic subtypes. These support biological heterogeneity of depression, but current subtypes are not yet a validated taxonomy and do not map one-to-one onto TRD."
+}
