@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "run_id": "2026-08-04_institute-pilot-inflammation",
+  "project": "Institute Evidence Integrity Search",
+  "protocol_version": "2.0",
+  "run_date": "2026-08-04",
+  "execution_environment": "ChatGPT connected web and GitHub environment",
+  "model": {
+    "model_name": "GPT-5.6 Thinking",
+    "model_version": null,
+    "independent_model_instances": 1,
+    "role_execution": "sequential isolated functional passes",
+    "limitation": "The environment did not expose three genuinely independent model instances; role agreement was not treated as independent evidence."
+  },
+  "scientific_scope": {
+    "pilot_question": "Does pretreatment peripheral inflammation prospectively identify patients who will develop antidepressant resistance, beyond depression severity and major confounders?",
+    "coverage": "web-accessible pilot evidence map",
+    "exhaustive_database_claim": false
+  },
+  "counts": {
+    "queries": 38,
+    "records_retrieved": null,
+    "records_retrieved_note": "Not reported because the search interface did not provide reproducible database-level result counts; CB8 applied.",
+    "unique_study_families_mapped": 12,
+    "full_texts_checked": 3,
+    "registry_matches": 5,
+    "companion_publications_flagged_as_nonindependent": 6,
+    "claims_blocked": 4,
+    "claims_resolved_after_block": 0,
+    "cycles_completed": 4
+  },
+  "token_metrics": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "reasoning_tokens": null,
+    "token_source": "Provider-reported token telemetry unavailable to this execution environment; no token counts invented.",
+    "duplicate_token_fraction": null,
+    "incremental_tokens_last_cycle": null,
+    "projected_tokens_to_next_stopping_point": null
+  },
+  "cost_metrics": {
+    "pricing_date": "2026-08-04",
+    "input_rate_usd_per_million": null,
+    "output_rate_usd_per_million": null,
+    "estimated_cost_usd": null,
+    "currency": "USD",
+    "note": "Pricing and provider token usage were not exposed; estimated cost is therefore intentionally null."
+  },
+  "timing": {
+    "wall_time_seconds": null,
+    "note": "Reliable end-to-end wall-time telemetry was not exposed."
+  },
+  "tool_failures": {
+    "failed_calls": 3,
+    "retry_count": 0,
+    "events": [
+      {
+        "type": "github_file_not_found",
+        "count": 2,
+        "impact": "Expected existence checks before creating new pilot files; no scientific data lost."
+      },
+      {
+        "type": "pdf_screenshot_cache_miss",
+        "count": 1,
+        "impact": "Screenshot of the Cureus PDF failed with a cache-miss error. Parsed PDF text remained available and was used; this should be noted if reproducing visual-table verification."
+      }
+    ]
+  },
+  "integrity_events": [
+    {
+      "rule": "CB4",
+      "event": "Multiple GENDEP publications identified within one parent study family.",
+      "action": "Mapped as companion publications and prohibited from being counted as independent replication."
+    },
+    {
+      "rule": "CB2",
+      "event": "Cross-sectional TRD inflammation evidence identified.",
+      "action": "Causal and temporal claims downgraded or blocked."
+    },
+    {
+      "rule": "CB3",
+      "event": "No externally validated pretreatment inflammatory classifier of future multi-trial TRD identified.",
+      "action": "Distinct-disease biomarker claim blocked."
+    },
+    {
+      "rule": "CB8",
+      "event": "Search engine did not expose reproducible exact result counts.",
+      "action": "Counts omitted rather than estimated."
+    }
+  ],
+  "stopping_status": {
+    "whole_review_stopped": false,
+    "pilot_branch_stopped": true,
+    "reason": "The narrow inflammation branch reached a stable discriminative conclusion for pilot purposes. It does not satisfy the stopping rule for the complete MDD/TRD multi-domain review.",
+    "next_high_information_action": "Study-family-level reconstruction of the 2026 inflammation meta-analysis or execution of a second biological domain using the same Institute configuration."
+  }
+}
