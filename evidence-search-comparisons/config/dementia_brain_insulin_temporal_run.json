@@ -1,0 +1,345 @@
+{
+  "config_version": "1.0.0",
+  "project_id": "brain_insulin_across_dementias_temporal",
+  "project_title": "Brain insulin resistance across dementias: shared mechanism, disease-specific phenotype, or downstream consequence?",
+  "research_question": "Is the phenomenon commonly described as type 3 diabetes or brain insulin resistance the same biological process across major dementias, and at what point in each disease trajectory does it first become demonstrable?",
+  "terminology_rule": {
+    "type_3_diabetes_status": "historical_or_conceptual_label_not_formal_diagnosis",
+    "preferred_terms": [
+      "brain insulin resistance",
+      "central insulin resistance",
+      "impaired brain insulin signaling",
+      "insulin/IGF signaling dysfunction"
+    ],
+    "exclude_confusion_with": "type 3c pancreatogenic diabetes"
+  },
+  "scientific_models": [
+    {
+      "id": "M1",
+      "name": "shared_early_mechanism",
+      "summary": "A common early brain-insulin-resistance process contributes causally across multiple dementias.",
+      "predictions": [
+        "comparable insulin-signaling defects across dementia pathologies",
+        "abnormalities detectable before substantial neuronal loss",
+        "effects persist after accounting for systemic diabetes",
+        "shared signaling nodes across diseases",
+        "insulin-directed interventions affect downstream disease biology across multiple dementias"
+      ]
+    },
+    {
+      "id": "M2",
+      "name": "alzheimer_specific_phenotype",
+      "summary": "The classical type-3-diabetes phenotype is predominantly Alzheimer-related.",
+      "predictions": [
+        "intrinsic neuronal insulin resistance is stronger or qualitatively different in AD",
+        "non-AD dementias show weaker or different brain insulin phenotypes",
+        "abnormalities track amyloid/tau biology more closely than other proteinopathies",
+        "head-to-head comparisons discriminate AD from non-AD disease"
+      ]
+    },
+    {
+      "id": "M3",
+      "name": "disease_specific_metabolic_phenotypes",
+      "summary": "Different dementias disrupt insulin-related pathways through different mechanisms and compartments.",
+      "predictions": [
+        "AD, Lewy-body disease, FTD and vascular disease have distinct pathway signatures",
+        "cellular compartment differs by disease",
+        "genotype/pathology-specific signatures occur within FTD and familial dementias",
+        "no single cross-dementia molecular definition captures all cases"
+      ]
+    },
+    {
+      "id": "M4",
+      "name": "secondary_convergence",
+      "summary": "Insulin-signaling dysfunction is mainly a downstream convergence of established neurodegeneration, inflammation, proteinopathy, or energetic failure.",
+      "predictions": [
+        "abnormality increases with disease burden",
+        "early stages show weak or inconsistent insulin defects",
+        "different initiating pathologies converge on similar late metabolic failure",
+        "insulin correction may improve function without altering initiating pathology"
+      ]
+    },
+    {
+      "id": "M5",
+      "name": "systemic_or_confounding",
+      "summary": "Much of the association is explained by peripheral insulin resistance, vascular disease, age, obesity, medications, frailty, or ascertainment.",
+      "predictions": [
+        "effects attenuate with rigorous metabolic and vascular adjustment",
+        "peripheral proxies show stronger effects than direct brain measures",
+        "vascular and mixed dementias show the strongest associations",
+        "intrinsic brain insulin resistance independent of systemic disease is uncommon"
+      ]
+    }
+  ],
+  "dementia_strata": [
+    "sporadic Alzheimer disease",
+    "autosomal-dominant Alzheimer disease",
+    "Down syndrome-associated Alzheimer disease",
+    "dementia with Lewy bodies",
+    "Parkinson disease dementia",
+    "frontotemporal dementia",
+    "behavioral-variant FTD",
+    "primary progressive aphasia when mechanistically relevant",
+    "GRN-associated FTD",
+    "MAPT-associated FTD",
+    "C9orf72-associated FTD",
+    "vascular cognitive impairment",
+    "vascular dementia",
+    "cerebral small-vessel disease",
+    "mixed AD/vascular dementia",
+    "mixed AD/Lewy-body pathology"
+  ],
+  "comparators": [
+    "cognitively normal aging",
+    "systemic type 2 diabetes without dementia",
+    "metabolically healthy controls",
+    "other neurodegenerative disease controls when available"
+  ],
+  "biological_compartments": [
+    "systemic/peripheral",
+    "cerebrovascular/endothelial",
+    "glial",
+    "neuronal"
+  ],
+  "evidence_directness_hierarchy": [
+    {
+      "level": "A",
+      "label": "functional_human_brain_insulin_response",
+      "examples": [
+        "ex vivo insulin stimulation of human brain tissue",
+        "validated in-vivo insulin-response paradigm",
+        "receptor/pathway response before versus after insulin exposure"
+      ]
+    },
+    {
+      "level": "B",
+      "label": "human_brain_molecular_signaling",
+      "examples": [
+        "INSR",
+        "IRS1/IRS2 phosphorylation",
+        "PI3K",
+        "AKT",
+        "GSK3B",
+        "mTOR",
+        "FOXO",
+        "cell-type-resolved transcriptomics/proteomics/phosphoproteomics"
+      ]
+    },
+    {
+      "level": "C",
+      "label": "validated_brain_derived_or_csf_biomarker",
+      "examples": [
+        "CSF markers",
+        "rigorously validated brain-derived biomarkers"
+      ]
+    },
+    {
+      "level": "D",
+      "label": "mechanistically_linked_neuroimaging",
+      "examples": [
+        "imaging response to insulin challenge or validated insulin-linked imaging paradigm"
+      ]
+    },
+    {
+      "level": "E",
+      "label": "peripheral_insulin_resistance",
+      "examples": [
+        "HOMA-IR",
+        "fasting insulin",
+        "HbA1c",
+        "TyG",
+        "systemic diabetes diagnosis"
+      ]
+    },
+    {
+      "level": "F",
+      "label": "epidemiological_association",
+      "examples": [
+        "diabetes-dementia association",
+        "metabolic syndrome association"
+      ]
+    }
+  ],
+  "non_equivalence_rules": [
+    "Peripheral insulin resistance does not by itself demonstrate brain insulin resistance.",
+    "FDG-PET hypometabolism does not by itself demonstrate insulin resistance.",
+    "Altered abundance of an insulin-pathway protein does not by itself demonstrate functional insulin resistance.",
+    "Cross-sectional severity association does not establish temporal precedence or onset.",
+    "LLM agreement does not constitute scientific replication."
+  ],
+  "temporal_analysis": {
+    "enabled": true,
+    "primary_goal": "Reconstruct the earliest defensible detection of insulin-signaling abnormality in each dementia and its ordering relative to defining pathology and neurodegeneration.",
+    "canonical_stages": [
+      "cognitively_normal_biomarker_negative_or_unknown",
+      "preclinical_biological_disease",
+      "subjective_cognitive_decline",
+      "prodromal_or_MCI",
+      "established_dementia",
+      "advanced_disease"
+    ],
+    "pathology_anchors": [
+      "amyloid_beta",
+      "tau",
+      "alpha_synuclein",
+      "TDP_43",
+      "cerebrovascular_injury",
+      "neuroinflammation",
+      "synaptic_dysfunction",
+      "mitochondrial_or_energetic_dysfunction",
+      "neuronal_loss"
+    ],
+    "required_fields": [
+      "study_family_id",
+      "dementia_stratum",
+      "insulin_abnormality",
+      "biological_compartment",
+      "brain_region_or_tissue",
+      "cell_type",
+      "measurement_method",
+      "evidence_directness_level",
+      "participant_stage",
+      "pathology_anchor",
+      "pathology_status",
+      "time_relation_to_pathology",
+      "time_relation_to_clinical_diagnosis",
+      "longitudinal_or_cross_sectional",
+      "prospective_or_retrospective",
+      "earliest_observed_stage",
+      "earliest_observed_time_before_diagnosis",
+      "progression_prediction",
+      "temporal_claim_class",
+      "temporal_confidence",
+      "systemic_diabetes_status",
+      "key_confounders",
+      "risk_of_bias",
+      "replication_status",
+      "source_reference_ids"
+    ],
+    "temporal_claim_classes": {
+      "T1_direct_precedence": "Longitudinal evidence demonstrates insulin abnormality before a defined pathology, clinical transition, or neurodegenerative endpoint.",
+      "T2_anchored_early_presence": "Abnormality is directly observed at a preclinical/prodromal stage, but precedence over pathology is not demonstrated.",
+      "T3_stage_association_only": "Cross-sectional or stage-correlated evidence without onset inference.",
+      "T4_retrospective_or_proxy": "Timing is inferred from retrospective reports, peripheral proxies, unvalidated biomarkers, or indirect measures.",
+      "T5_onset_unresolved": "Evidence cannot locate onset defensibly."
+    },
+    "hard_rules": [
+      "Never convert T2, T3, or T4 evidence into T1 precedence.",
+      "For cross-sectional studies, time_relation_to_pathology may be coexisting, earlier_stage_presence, or unresolved, but not demonstrated_precedence.",
+      "Earliest observed abnormality is not synonymous with biological onset.",
+      "If disease stage or pathology status is ambiguous, set temporal_claim_class to T5_onset_unresolved unless another defensible classification applies.",
+      "Use intervals or stage ranges; do not invent a single onset age.",
+      "Separate temporal ordering relative to diagnosis from ordering relative to molecular pathology."
+    ],
+    "required_outputs": [
+      "temporal_evidence_ledger.csv",
+      "disease_trajectory_matrix.csv",
+      "pathology_ordering_matrix.csv",
+      "temporal_claims_audit.csv",
+      "temporal_summary.md"
+    ]
+  },
+  "measurement_validity_audit": {
+    "required": true,
+    "fields": [
+      "assay_or_platform",
+      "assumed_biological_specificity",
+      "validation_source",
+      "later_validation_or_invalidation",
+      "effect_on_confidence",
+      "independent_method_replication"
+    ],
+    "known_priority_example": "L1CAM-based neuron-derived extracellular-vesicle claims must be linked to later L1CAM/EV validation literature rather than accepted at face value."
+  },
+  "shared_discriminator_questions": [
+    "Is the abnormality demonstrated directly in brain tissue or only via systemic/proxy measures?",
+    "Which cellular compartment and brain region are affected?",
+    "Is the molecular direction and pathway node the same across dementias?",
+    "Does the abnormality persist after controlling for systemic diabetes, obesity, vascular disease, age, medications and frailty?",
+    "Is the finding independently replicated in distinct study families, cohorts, laboratories or analytic pipelines?",
+    "What is the earliest defensible disease stage at which the abnormality is observed?",
+    "Does evidence demonstrate that insulin-signaling dysfunction precedes defining pathology or only coexist with it?",
+    "Would the same result be expected in a patient with comparable neurodegeneration but a different underlying dementia?",
+    "Does insulin-directed intervention modify disease biology, symptoms only, or neither?",
+    "Could the observed association be explained by measurement artefact, selection, treatment exposure or publication bias?"
+  ],
+  "search_allocation_percent": {
+    "stable_core_and_direct_brain_evidence": 60,
+    "new_discriminators_and_temporal_onset": 25,
+    "contradictory_null_replication_and_method_validation": 15
+  },
+  "citation_expansion": {
+    "minimum_recursive_generations": 2,
+    "maximum_generations": 6,
+    "continue_triggers": [
+      "new biological compartment",
+      "new insulin-signaling mechanism",
+      "new dementia subtype",
+      "new temporal dataset",
+      "new material contradiction",
+      "new measurement-validity issue",
+      "new independent replication",
+      "new conclusion-changing study family"
+    ],
+    "saturation": "Stop only after two consecutive low-yield cycles, including at least one with zero new eligible study families, plus completion of pivotal citation chasing and unresolved-gap classification."
+  },
+  "llm_execution": {
+    "minimum_distinct_model_families": 3,
+    "provider_neutral": true,
+    "recommended_roles": [
+      "independent_search_strategy_pass",
+      "independent_extraction_or_appraisal_pass",
+      "adversarial_contradiction_or_temporal_audit_pass"
+    ],
+    "rule": "Model agreement is a quality-control signal only and must never increment scientific replication counts.",
+    "record_per_call": [
+      "provider",
+      "model",
+      "model_version_if_available",
+      "role",
+      "prompt_hash",
+      "input_tokens",
+      "output_tokens",
+      "cached_tokens_if_reported",
+      "cost_basis",
+      "estimated_cost",
+      "latency",
+      "status",
+      "retry_count",
+      "error_metadata"
+    ]
+  },
+  "required_outputs": [
+    "executive_answer.md",
+    "cross_dementia_insulin_matrix.csv",
+    "temporal_evidence_ledger.csv",
+    "disease_trajectory_matrix.csv",
+    "pathology_ordering_matrix.csv",
+    "anatomical_cellular_map.csv",
+    "molecular_pathway_comparison.csv",
+    "reference_master.csv",
+    "study_families.csv",
+    "claim_evidence_matrix.csv",
+    "risk_of_bias.csv",
+    "measurement_validity_audit.csv",
+    "citation_nodes.csv",
+    "citation_edges.csv",
+    "citation_graph.graphml",
+    "growth_and_pruning.svg",
+    "branch_efficiency.csv",
+    "process_metrics.jsonl",
+    "cost_summary.csv",
+    "malfunction_manifest.json",
+    "final_report.md"
+  ],
+  "final_adjudication_categories": [
+    "single_common_cross_dementia_process",
+    "predominantly_Alzheimer_specific",
+    "multiple_disease_specific_phenotypes",
+    "late_secondary_metabolic_convergence",
+    "mostly_systemic_or_vascular_confounding",
+    "mixed_mechanism",
+    "unresolved"
+  ],
+  "decision_rule": "Preserve uncertainty. Do not force a winning model when directness, temporality, replication or measurement validity are insufficient."
+}
