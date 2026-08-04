@@ -1,0 +1,106 @@
+{
+  "metrics_schema_version": "1.0.0",
+  "run_id": "{{RUN_ID}}",
+  "project_name": "{{PROJECT_NAME}}",
+  "started_at": "{{ISO_8601}}",
+  "completed_at": null,
+  "status": "planned",
+  "budget": {
+    "maximum_total_tokens": null,
+    "maximum_cost": null,
+    "currency": "USD",
+    "maximum_wall_time_seconds": null
+  },
+  "pricing": [
+    {
+      "provider": "{{PROVIDER}}",
+      "model_name": "{{MODEL_NAME}}",
+      "model_version": "{{MODEL_VERSION}}",
+      "pricing_date": "{{YYYY-MM-DD}}",
+      "input_rate_per_million": null,
+      "cached_input_rate_per_million": null,
+      "output_rate_per_million": null,
+      "reasoning_token_billing_rule": "{{PROVIDER_RULE_OR_UNKNOWN}}",
+      "source_url": "{{OFFICIAL_PRICING_SOURCE}}"
+    }
+  ],
+  "events": [
+    {
+      "event_id": "E0001",
+      "parent_event_id": null,
+      "timestamp_start": "{{ISO_8601}}",
+      "timestamp_end": null,
+      "cycle_id": "C0",
+      "role_id": "protocol_manager",
+      "agent_or_model_id": "{{AGENT_OR_MODEL}}",
+      "operation": "protocol_definition",
+      "query_id": null,
+      "source_ids": [],
+      "input_tokens": null,
+      "retrieved_context_tokens": null,
+      "reasoning_tokens": null,
+      "output_tokens": null,
+      "cached_input_tokens": null,
+      "total_billable_tokens": null,
+      "token_count_source": "unavailable",
+      "estimated_cost": null,
+      "records_returned": 0,
+      "unique_records_added": 0,
+      "unique_study_families_added": 0,
+      "claims_supported": 0,
+      "claims_contradicted": 0,
+      "audit_questions_resolved": 0,
+      "conclusion_changed": false,
+      "error": null,
+      "retry_of_event_id": null
+    }
+  ],
+  "cycle_summaries": [],
+  "role_summaries": [],
+  "run_totals": {
+    "input_tokens": null,
+    "retrieved_context_tokens": null,
+    "reasoning_tokens": null,
+    "output_tokens": null,
+    "cached_input_tokens": null,
+    "total_billable_tokens": null,
+    "estimated_cost": null,
+    "wall_time_seconds": null,
+    "queries": 0,
+    "unique_records": 0,
+    "unique_study_families": 0,
+    "included_results": 0,
+    "duplicates_removed": 0,
+    "claims_blocked": 0,
+    "claims_resolved": 0,
+    "audit_questions_resolved": 0,
+    "conclusion_changing_findings": 0
+  },
+  "efficiency": {
+    "tokens_per_unique_record": null,
+    "tokens_per_unique_study_family": null,
+    "tokens_per_included_result": null,
+    "tokens_per_resolved_audit_question": null,
+    "tokens_per_conclusion_changing_finding": null,
+    "duplicate_token_fraction": null,
+    "audit_token_fraction": null,
+    "missing_evidence_token_fraction": null,
+    "useful_yield_per_100k_tokens": null
+  },
+  "data_quality": {
+    "provider_reported_token_fraction": null,
+    "locally_estimated_token_fraction": null,
+    "unmeasured_event_fraction": null,
+    "known_metric_gaps": []
+  },
+  "refund_or_malfunction_metadata": {
+    "failed_calls": [],
+    "retry_count": 0,
+    "duplicate_billing_suspected": false,
+    "provider_request_ids": [],
+    "error_timestamps": [],
+    "partial_outputs_preserved": [],
+    "pricing_snapshot_date": "{{YYYY-MM-DD}}",
+    "notes": "Record provider-visible request identifiers and errors without storing credentials or sensitive source content."
+  }
+}
