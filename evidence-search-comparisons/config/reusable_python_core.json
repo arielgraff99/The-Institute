@@ -1,0 +1,75 @@
+{
+  "config_version": "1.0.0",
+  "architecture_type": "reusable_python_core",
+  "core_package": "institute_search",
+  "python_minimum": "3.11",
+  "separation_rule": {
+    "core": "domain-agnostic reusable logic",
+    "profiles": "question-specific terminology, models, stages, outputs, novelty definitions and validators",
+    "hard_rule": "No dementia, insulin, BPSD, APOE or other project-specific term may be hard-coded in the reusable core."
+  },
+  "core_modules": [
+    "config",
+    "schemas",
+    "orchestrator",
+    "state",
+    "provenance",
+    "search",
+    "llm",
+    "extraction",
+    "appraisal",
+    "graph",
+    "metrics",
+    "synthesis",
+    "plugins"
+  ],
+  "generic_capabilities": [
+    "configuration layering and hashing",
+    "provider-neutral search adapters",
+    "provider-neutral LLM adapters",
+    "study-family identity and deduplication",
+    "generic temporal clocks and event ordering",
+    "novel-insight classification and saturation",
+    "directed citation graph",
+    "dendrogram-like growth and pruning projection",
+    "token cost and malfunction telemetry",
+    "checkpoint and resume",
+    "profile-driven outputs"
+  ],
+  "profile_folder": "profiles/<profile_name>",
+  "first_profile": "profiles/dementia_brain_insulin",
+  "required_cli_commands": [
+    "validate",
+    "plan",
+    "run",
+    "resume",
+    "render-graph",
+    "audit-saturation",
+    "summarize-cost"
+  ],
+  "configuration_precedence": [
+    "core_defaults",
+    "domain_agnostic_methodology",
+    "project_profile",
+    "profile_addenda",
+    "cli_overrides"
+  ],
+  "required_reproducibility_metadata": [
+    "resolved_config",
+    "source_config_files",
+    "source_file_hashes",
+    "merge_order",
+    "conflict_resolutions",
+    "software_version",
+    "git_commit_sha"
+  ],
+  "acceptance_criteria": [
+    "dementia profile runs without domain-specific hard-coding in core",
+    "second fixture profile runs on same package",
+    "graph metrics saturation and provenance engines are shared",
+    "offline tests and dry-run require no paid API",
+    "package installs with pip editable mode",
+    "CLI supports validate plan run resume render and audit",
+    "runs reproduce from resolved config logs hashes and git SHA"
+  ]
+}
