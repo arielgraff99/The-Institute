@@ -1,0 +1,10 @@
+{
+  "module":"Depression Disease-Specific Review Module",
+  "version":"1.0",
+  "run_date":"2026-08-04",
+  "framework":"Historical Disease-Splitting Framework v0.2",
+  "framework_status":"FROZEN_FOR_DOWNSTREAM_TESTING",
+  "scope":"sentinel implementation run, not exhaustive systematic review",
+  "source_inputs":["Depression Classification Research.txt (conversation attachment; continuity/background)","Institute baseline MDD/TRD report 2026-08-01","Institute integrity rerun 2026-08-03","Institute inflammation pilot 2026-08-04","19 current web search queries"],
+  "preferred_formulation":"COMPOSITE_MULTIAXIAL"
+}
