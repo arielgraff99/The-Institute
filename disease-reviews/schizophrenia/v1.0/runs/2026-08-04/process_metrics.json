@@ -1,0 +1,14 @@
+{
+  "records": 32,
+  "unique_study_families": 32,
+  "higher_confidence_records": 31,
+  "web_search_queries_executed_this_run": 21,
+  "tokens": null,
+  "cost": null,
+  "wall_time": null,
+  "limitations": [
+    "sentinel evidence map, not exhaustive licensed-database review",
+    "no quantitative meta-analysis",
+    "some candidate-biotype evidence remains cross-sectional/internal validation"
+  ]
+}
