@@ -1,0 +1,28 @@
+{
+  "mdd_wide_or_crosscutting_candidates": {
+    "BIOBEHAVIORAL_RESPONSE_MARKER": ["DEP038"],
+    "CIRCUIT_NEUROIMAGING": ["DEP015", "DEP016"],
+    "CLINICAL_FUNCTIONAL": ["DEP052"],
+    "EEG_ECG_RESPONSE_MARKER": ["DEP054"],
+    "EEG_RESPONSE_MARKER": ["DEP039", "DEP047"],
+    "GENETIC_LIABILITY": ["DEP011", "DEP012", "DEP014", "DEP044"],
+    "IMMUNOMETABOLIC": ["DEP034"],
+    "INFLAMMATORY": ["DEP048", "DEP057"],
+    "INFLAMMATORY_IMMUNE": ["DEP017", "DEP018", "DEP021", "DEP022"],
+    "METABOLIC": ["DEP033"],
+    "METABOLIC_SYMPTOM_DIRECTION": ["DEP055"],
+    "MICROBIOME_METABOLIC": ["DEP050"],
+    "NEUROIMAGING": ["DEP036", "DEP037", "DEP046"],
+    "NEUROIMAGING_MULTIOMIC": ["DEP032"],
+    "PHARMACOGENOMIC": ["DEP056"],
+    "TRANSCRIPTOMIC_RESPONSE_MARKER": ["DEP058"],
+    "TYPE2_IMMUNE": ["DEP035"]
+  },
+  "candidate_records": 28,
+  "records_with_some_replication_or_validation_signal": ["DEP016", "DEP017", "DEP033", "DEP036", "DEP037", "DEP047", "DEP048", "DEP052"],
+  "records_linked_to_treatment_response_or_moderation": ["DEP017", "DEP034", "DEP036", "DEP037", "DEP038", "DEP039", "DEP047", "DEP050", "DEP054", "DEP056", "DEP058"],
+  "trd_enrichment_only_records": ["DEP013", "DEP019", "DEP020", "DEP023"],
+  "mdd_endotype_structure": "PROVISIONALLY_SUPPORTED",
+  "global_trd_equals_single_endotype": "NOT_SUPPORTED",
+  "interpretation": "Searching MDD independently of the TRD label reveals candidate immune, metabolic, circuit and multi-omic subtypes. These support biological heterogeneity of depression, but current subtypes are not yet a validated taxonomy and do not map one-to-one onto TRD."
+}
