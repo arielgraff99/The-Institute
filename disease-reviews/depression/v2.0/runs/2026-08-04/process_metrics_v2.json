@@ -1,0 +1,19 @@
+{
+  "module_version":"2.0",
+  "run_date":"2026-08-04",
+  "evidence_records":35,
+  "unique_study_families":33,
+  "new_v2_records":5,
+  "web_queries_this_upgrade":11,
+  "web_search_batches":3,
+  "five_priority_modules_implemented":5,
+  "tests":"PASS",
+  "historical_framework":"0.2 immutable",
+  "holdout_framework":"0.2-H1",
+  "holdout_excluded_cases":["HIST008","HIST019","HIST035"],
+  "input_tokens":null,
+  "output_tokens":null,
+  "estimated_cost":null,
+  "wall_time_seconds":null,
+  "telemetry_note":"Token counts, monetary cost and exact wall time were not available from the tool interfaces and are not invented."
+}
