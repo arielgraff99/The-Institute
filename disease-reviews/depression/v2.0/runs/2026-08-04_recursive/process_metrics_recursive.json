@@ -1,0 +1,29 @@
+{
+  "run_type": "recursive web-accessible evidence expansion",
+  "run_date": "2026-08-04",
+  "historical_framework": "0.2",
+  "holdout_framework": "0.2-H1",
+  "starting_records": 35,
+  "final_records": 58,
+  "starting_study_families": 33,
+  "final_study_families": 55,
+  "new_records_added": 23,
+  "new_study_families_added": 22,
+  "higher_confidence_records": 49,
+  "search_queries_executed": 54,
+  "search_cycles": 7,
+  "saturation_rule": "Stop after >=3 consecutive cycles with no new study family changing the primary classification.",
+  "saturation_achieved": true,
+  "consecutive_final_cycles_without_primary_change": 6,
+  "input_tokens": null,
+  "output_tokens": null,
+  "estimated_cost": null,
+  "wall_time_seconds": null,
+  "limitations": [
+    "Web-accessible search rather than licensed Embase/PsycINFO/Web of Science execution",
+    "No duplicate independent human screening",
+    "No full quantitative meta-analysis",
+    "Registry matching targeted rather than exhaustive for every record",
+    "Some current evidence is preprint/discovery-stage and remains in unrestricted track only"
+  ]
+}
