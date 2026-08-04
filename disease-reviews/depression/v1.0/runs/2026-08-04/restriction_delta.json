@@ -1,0 +1,12 @@
+{
+  "delta": [
+    {"classification":"DISTINCT_DISEASE","unrestricted_gate":"NOT_SUPPORTED_AS_GLOBAL_CLASS","higher_confidence_gate":"NOT_SUPPORTED_AS_GLOBAL_CLASS","changed":false},
+    {"classification":"BIOLOGICAL_SUBTYPE_OR_ENDOTYPE","unrestricted_gate":"NOT_SUPPORTED_AS_GLOBAL_CLASS","higher_confidence_gate":"NOT_SUPPORTED_AS_GLOBAL_CLASS","changed":false},
+    {"classification":"DIMENSION_OR_SPECTRUM","unrestricted_gate":"PARTIALLY_SUPPORTED","higher_confidence_gate":"PARTIALLY_SUPPORTED","changed":false},
+    {"classification":"DISEASE_STAGE","unrestricted_gate":"PARTIALLY_SUPPORTED","higher_confidence_gate":"PARTIALLY_SUPPORTED","changed":false},
+    {"classification":"TREATMENT_RESPONSE_STATE","unrestricted_gate":"PARTIALLY_SUPPORTED","higher_confidence_gate":"PARTIALLY_SUPPORTED","changed":false},
+    {"classification":"OPERATIONAL_CLINICAL_CATEGORY","unrestricted_gate":"SUPPORTED","higher_confidence_gate":"SUPPORTED","changed":false}
+  ],
+  "overall":"ROBUST_TO_RESTRICTION_AT_CLASS_GATE_LEVEL",
+  "note":"Biological confidence narrows in Track B, but no class gate changes in this sentinel run."
+}
