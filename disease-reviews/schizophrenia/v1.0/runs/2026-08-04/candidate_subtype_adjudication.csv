@@ -1,0 +1,10 @@
+candidate,best_class,status,rationale
+TRADITIONAL_CLINICAL_SUBTYPES,FAILED/ABANDONED,NOT_SUPPORTED,Poor stability/reliability/validity; historical subtypes removed.
+TREATMENT_RESISTANT_SCHIZOPHRENIA,TREATMENT_RESPONSE_STATE,SUPPORTED_AS_OPERATIONAL_PARTIALLY_AS_BIOLOGICAL,"Clear treatment-course definition and clozapine pathway; possible biology, but definition/exposure/adherence and mechanistic heterogeneity prevent distinct-disease promotion."
+CLOZAPINE_RESISTANT_SCHIZOPHRENIA,NESTED_TREATMENT_RESPONSE_STATE,PARTIALLY_SUPPORTED,Clinically meaningful later resistance state; small biomarker literature and heterogeneous mechanisms.
+DEFICIT_PRIMARY_NEGATIVE_SYMPTOM_PHENOTYPE,DIMENSION_OR_CLINICAL_SUBTYPE,PARTIALLY_SUPPORTED,"Primary enduring negative symptoms identify a relatively stable subgroup, but secondary negative symptoms and dimensional biology limit ontology."
+COGNITIVE_SUBTYPES,DIMENSION_OR_BIOLOGICAL_PHENOTYPE,PARTIALLY_SUPPORTED,Replicated normal/intermediate/impaired profiles and imaging correlates; boundaries likely quantitative.
+PSYCHOSIS_BIOTYPES,TRANSDIAGNOSTIC_BIOLOGICAL_ENDOTYPES,STRONGLY_PROVISIONALLY_SUPPORTED,Best replicated biological subgroup evidence; crosses schizophrenia/schizoaffective/bipolar psychosis boundaries and lacks proven treatment utility.
+IMMUNE_INFLAMMATORY_ENDOTYPES,BIOLOGICAL_ENDOTYPE,PROVISIONAL,Response-stratified immune differences and internal classifiers; needs independent prospective validation and confounder control.
+NEUROIMAGING_SUBTYPES,BIOLOGICAL_SUBTYPE,NOT_YET_SUPPORTED,Current critical review finds inconsistent subtype profiles and inadequate external/longitudinal validation.
+COMPOSITE_MULTIAXIAL,OVERALL,PREFERRED,"Schizophrenia is best represented as multidimensional syndrome with cross-cutting biotypes/endotypes, cognitive/negative dimensions and treatment-response states."
