@@ -1,0 +1,135 @@
+{
+  "addendum_version": "1.0.0",
+  "project_id": "brain_insulin_across_dementias_temporal",
+  "module": "clinical_bpsd_phenotyping",
+  "purpose": "Test whether brain insulin-signaling phenotypes associate with behavioral and psychological symptoms of dementia (BPSD) across and within dementia etiologies, independently of global cognitive severity and diagnostic label.",
+  "core_rule": "BPSD is a cross-cutting clinical phenotype layer, not a separate dementia diagnosis and not a single stable subtype.",
+  "analysis_levels": [
+    "individual_symptom",
+    "predefined_syndrome_cluster",
+    "data_driven_cluster",
+    "longitudinal_trajectory",
+    "cross_dementia_phenotype",
+    "within_dementia_phenotype"
+  ],
+  "symptom_domains": [
+    "agitation",
+    "aggression",
+    "irritability",
+    "psychosis_delusions",
+    "psychosis_hallucinations",
+    "apathy_withdrawal",
+    "depression_dysphoria",
+    "anxiety",
+    "disinhibition",
+    "impulsivity",
+    "aberrant_motor_behavior",
+    "sleep_circadian_disturbance",
+    "REM_sleep_behavior_disorder_when_applicable",
+    "appetite_eating_change",
+    "euphoria_elation",
+    "rejection_of_care",
+    "personality_behavioral_change"
+  ],
+  "candidate_cluster_families": [
+    "psychosis",
+    "agitation_aggression_irritability",
+    "apathy_withdrawal",
+    "affective_depression_anxiety",
+    "disinhibition_impulsivity",
+    "motor_restlessness",
+    "sleep_circadian",
+    "appetite_eating",
+    "mixed_high_burden"
+  ],
+  "measurement_instruments": [
+    "NPI",
+    "NPI_Q",
+    "NPI_C",
+    "BEHAVE_AD",
+    "CMAI",
+    "AES_or_other_apathy_scales",
+    "Cornell_Scale_for_Depression_in_Dementia",
+    "validated_psychosis_scales",
+    "validated_sleep_or_RBD_measures",
+    "study_specific_behavioral_phenotyping_with_explicit_definition"
+  ],
+  "required_covariates_or_effect_modifiers": [
+    "dementia_etiology",
+    "clinical_stage",
+    "global_cognitive_severity",
+    "functional_severity",
+    "age",
+    "sex",
+    "education_when_relevant",
+    "APOE_or_other_genotype_when_available",
+    "systemic_diabetes",
+    "peripheral_insulin_resistance",
+    "vascular_burden",
+    "frailty",
+    "delirium_or_acute_medical_illness",
+    "pain",
+    "sensory_impairment",
+    "sleep_disorder",
+    "environmental_context",
+    "care_setting",
+    "psychotropic_medication_exposure",
+    "cholinesterase_inhibitor_or_memantine_exposure"
+  ],
+  "temporal_fields": [
+    "bpsd_first_observed_stage",
+    "bpsd_onset_relative_to_cognitive_decline",
+    "bpsd_onset_relative_to_insulin_abnormality",
+    "bpsd_onset_relative_to_proteinopathy",
+    "bpsd_persistent_vs_fluctuating",
+    "bpsd_incident_vs_prevalent",
+    "bpsd_resolved_recurrent_or_progressive",
+    "longitudinal_measurement_available"
+  ],
+  "insulin_bpsd_link_questions": [
+    "Does brain insulin dysfunction associate with BPSD after adjusting for dementia etiology and cognitive severity?",
+    "Is the association symptom-specific or driven by total BPSD burden?",
+    "Does the same insulin-signaling phenotype map to the same BPSD cluster across dementias?",
+    "Do different insulin pathway abnormalities map to different BPSD phenotypes within the same dementia?",
+    "Does insulin dysfunction precede incident BPSD, accompany it, or follow it?",
+    "Do BPSD trajectories mediate or modify the relationship between insulin dysfunction and functional decline?",
+    "Are observed associations explained by medications, systemic metabolic disease, vascular injury, delirium, pain, sleep disturbance, or care environment?"
+  ],
+  "cross_classification_matrix": {
+    "rows": "insulin_signaling_or_metabolic_phenotype",
+    "columns": [
+      "dementia_etiology",
+      "BPSD_individual_symptom",
+      "BPSD_cluster",
+      "clinical_stage",
+      "pathology_stage",
+      "genetic_stratum",
+      "cellular_compartment",
+      "brain_region",
+      "medication_exposure"
+    ]
+  },
+  "primary_confounding_rule": "Do not interpret a BPSD-insulin association as intrinsic neurobiology until acute medical causes, delirium, medication exposure, environmental triggers, systemic metabolic disease, and disease severity have been considered.",
+  "cluster_rule": "Never assume a universal BPSD cluster solution. Preserve original symptom-level data whenever available and record how each study derived or defined clusters.",
+  "trajectory_rule": "BPSD clusters may fluctuate, emerge, remit, recur, or change composition. Cross-sectional cluster membership must not be treated as a fixed biological subtype.",
+  "clinical_subtype_test": {
+    "question": "Does adding BPSD phenotype improve biological discrimination of brain insulin states beyond dementia diagnosis, pathology, genetics, and cognitive stage?",
+    "comparisons": [
+      "diagnosis_only",
+      "diagnosis_plus_BPSD",
+      "pathology_plus_BPSD",
+      "genetics_plus_BPSD",
+      "insulin_phenotype_plus_BPSD",
+      "integrated_multiaxial_model"
+    ]
+  },
+  "required_outputs": [
+    "bpsd_symptom_level_evidence_matrix.csv",
+    "bpsd_cluster_definitions.csv",
+    "bpsd_longitudinal_trajectory_ledger.csv",
+    "insulin_bpsd_cross_dementia_matrix.csv",
+    "bpsd_confounder_medication_audit.csv",
+    "bpsd_pathology_genotype_interaction_matrix.csv",
+    "bpsd_clinical_subtype_report.md"
+  ]
+}
