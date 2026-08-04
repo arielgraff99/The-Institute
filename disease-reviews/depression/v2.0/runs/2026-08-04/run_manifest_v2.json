@@ -1,0 +1,13 @@
+{
+  "project":"Depression Disease-Specific Review Module",
+  "version":"2.0",
+  "parent_version":"1.0",
+  "run_date":"2026-08-04",
+  "historical_framework":"config/frozen_disease_splitting_framework_v0.2.json",
+  "historical_holdout":"config/nonpsychiatric_holdout_framework_v0.2H1.json",
+  "primary_inputs":["runs/2026-08-04/evidence_ledger_v2.csv","runs/2026-08-04/criterion_judgments_v2.json"],
+  "implemented_modules":["trajectory","temporality","pseudoresistance","endotypes","nonpsychiatric_holdout"],
+  "primary_outputs":["run_summary_v2.json","trajectory.json","temporality.json","pseudoresistance.json","endotypes.json","holdout_sensitivity_v2.json","final_classification_v2.md"],
+  "status":"EXECUTED_SENTINEL_RUN",
+  "not_exhaustive_systematic_review":true
+}
