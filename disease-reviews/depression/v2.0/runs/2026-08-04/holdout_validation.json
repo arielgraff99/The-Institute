@@ -1,0 +1,8 @@
+{
+  "framework_version": "0.2-H1",
+  "excluded_cases": ["HIST008", "HIST019", "HIST035"],
+  "all_promoted_scientific_criteria_retain_nonpsychiatric_support": true,
+  "criteria_without_holdout_support": [],
+  "contaminated_support_entries": [],
+  "method": "Psychiatric/developmental historical cases removed; each promoted criterion revalidated for at least one explicit nonpsychiatric supporting comparator in the v0.2 historical evidence map. Criteria lacking nonpsychiatric support would be disabled; none of U01-U09/D01/E01/Q01/Q02/S01/R01/R02 failed this check."
+}
