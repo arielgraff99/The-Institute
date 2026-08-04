@@ -1,0 +1,67 @@
+{
+  "root": "MENTAL_ILLNESS",
+  "root_classification": "COMPOSITE_MULTIAXIAL_NETWORK",
+  "layers": [
+    {
+      "layer": 1,
+      "name": "ETIOLOGIC_DISEASE_PEEL_OFF",
+      "status": "SUPPORTED_FOR_SPECIFIC_SUBSETS",
+      "rule": "Promote only when distinct-disease gates including causal/intrinsic discriminator are met."
+    },
+    {
+      "layer": 2,
+      "name": "TRANSDIAGNOSTIC_BIOLOGICAL_LIABILITIES",
+      "status": "SUPPORTED_AS_PROVISIONAL_FACTORS",
+      "candidates": [
+        "schizophrenia-bipolar",
+        "internalizing",
+        "neurodevelopmental",
+        "compulsive",
+        "substance-use/externalizing"
+      ],
+      "note": "Factors are overlapping liabilities, not five new diseases."
+    },
+    {
+      "layer": 3,
+      "name": "CROSS_CUTTING_ENDOTYPES",
+      "status": "PROVISIONAL",
+      "note": "Biotypes/endotypes may cross legacy diagnoses and genomic factors."
+    },
+    {
+      "layer": 4,
+      "name": "PHENOTYPIC_DIMENSIONS",
+      "status": "SUPPORTED",
+      "examples": [
+        "psychosis/thought disorder",
+        "internalizing distress/fear",
+        "compulsivity",
+        "grooming",
+        "disinhibition",
+        "antagonism",
+        "cognition",
+        "negative symptoms",
+        "mood activation"
+      ]
+    },
+    {
+      "layer": 5,
+      "name": "DEVELOPMENT_TRAJECTORY_STAGE",
+      "status": "SUPPORTED_AS_ORTHOGONAL_AXIS"
+    },
+    {
+      "layer": 6,
+      "name": "TREATMENT_RESPONSE_STATE",
+      "status": "SUPPORTED_AS_ORTHOGONAL_AXIS",
+      "examples": [
+        "TRD",
+        "TRS"
+      ]
+    },
+    {
+      "layer": 7,
+      "name": "OPERATIONAL_DIAGNOSES_AND_CONTEXT",
+      "status": "SUPPORTED_FOR_CLINICAL_USE",
+      "note": "Legacy diagnoses can retain practical and residual biological specificity without being assumed to be natural disease boundaries."
+    }
+  ]
+}
