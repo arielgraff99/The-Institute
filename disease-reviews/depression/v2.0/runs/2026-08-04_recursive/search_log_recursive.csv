@@ -1,0 +1,55 @@
+cycle,query,purpose
+1,treatment-naive first episode major depression future treatment resistant depression prospective biomarker 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depressive disorder treatment resistance prospective first episode antidepressant nonresponse biomarker multiomics 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depressive disorder biological subtypes endotypes multiomics treatment response 2025 2026,broad discovery and pretreatment/endotype expansion
+1,treatment resistant depression pseudoresistance adherence therapeutic drug monitoring systematic review 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,treatment resistant depression trajectory staging prospective sequential treatment 2025 2026,broad discovery and pretreatment/endotype expansion
+1,treatment resistant depression registry biomarker ClinicalTrials.gov prospective first episode,broad discovery and pretreatment/endotype expansion
+1,depression biomarkers treatment response preprint multiomics endotype 2026,broad discovery and pretreatment/endotype expansion
+1,major depression treatment response endotype metabolomics proteomics external validation 2025 2026,broad discovery and pretreatment/endotype expansion
+1,first episode drug naive major depressive disorder prospective antidepressant response biomarker inflammation cortisol EEG MRI 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depressive disorder prospective antidepressant response metabolomics subtype external validation 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depressive disorder prospective antidepressant response proteomics subtype external validation 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depressive disorder treatment response genetics polygenic score prospective 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depressive disorder antidepressant response sleep circadian biomarker prospective 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depression treatment resistant socioeconomic access treatment adequacy adherence cohort 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depressive disorder treatment response endocrine cortisol HPA prospective biomarker 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+1,major depression treatment response microbiome prospective antidepressant 2024 2025 2026,broad discovery and pretreatment/endotype expansion
+2,major depressive disorder biomarker treatment response prospective validation negative null study 2024 2025 2026,"contradictions, null results, pseudoresistance and access"
+2,treatment resistant depression biomarker prediction replication null negative prospective 2024 2025 2026,"contradictions, null results, pseudoresistance and access"
+2,depression subtypes external validation treatment response null replication 2024 2025 2026,"contradictions, null results, pseudoresistance and access"
+2,antidepressant response biomarker randomized biomarker guided trial depression negative result,"contradictions, null results, pseudoresistance and access"
+2,treatment resistant depression adherence serum levels therapeutic drug monitoring cohort,"contradictions, null results, pseudoresistance and access"
+2,treatment resistant depression misdiagnosis bipolar pseudoresistance systematic review,"contradictions, null results, pseudoresistance and access"
+2,treatment resistant depression access socioeconomic treatment delay health system cohort,"contradictions, null results, pseudoresistance and access"
+2,treatment resistant depression ClinicalTrials.gov biomarker completed no results prospective,"contradictions, null results, pseudoresistance and access"
+3,NCT04342299 depression biomarker results publication,registry/publication matching and missing evidence
+3,NCT06369792 depression biomarker results publication,registry/publication matching and missing evidence
+3,NCT06337539 depression biomarker results publication,registry/publication matching and missing evidence
+3,NCT03096886 depression biomarker results publication,registry/publication matching and missing evidence
+3,NCT03947827 minocycline treatment resistant depression publication results 2026,registry/publication matching and missing evidence
+3,NCT04041479 BioTMS treatment resistant depression results publication 2026,registry/publication matching and missing evidence
+3,NCT05537584 depression biomarker bupropion sertraline publication 2026,registry/publication matching and missing evidence
+3,NCT06396312 DECIDE treatment resistant depression publication results,registry/publication matching and missing evidence
+4,future TRD first episode drug-naive depression prospective fMRI 5 year replication,replication and external validation saturation sweep
+4,treatment-resistant depression first episode drug naive prospective 5-year biomarker replication,replication and external validation saturation sweep
+4,BrainCVAE depression subtype treatment response external validation,replication and external validation saturation sweep
+4,white matter subtypes major depressive disorder treatment response independent validation 2026,replication and external validation saturation sweep
+4,metabolomic subtypes major depression independent validation treatment response 2025 2026,replication and external validation saturation sweep
+4,multi-omics depression subtype treatment response independent validation 2026,replication and external validation saturation sweep
+4,treatment resistant depression staging dimension episode duration resistance 2026,replication and external validation saturation sweep
+4,treatment resistant depression adherence adequacy serum antidepressant levels 2025 2026,replication and external validation saturation sweep
+5,2026 genetic risk difficult to treat depression 12000 prescription records bipolar ADHD neuroticism PubMed,genetic/definition citation mining
+5,2026 polygenic risk difficult-to-treat depression antidepressant prescriptions cohort PubMed,genetic/definition citation mining
+5,2026 treatment resistance depression polygenic bipolar ADHD neuroticism prescription records study,genetic/definition citation mining
+6,Genotype-Guided Antidepressant Prescribing for Patients With Depression 2026 results,source-level verification and newly found candidates
+6,Atypical energy-related symptoms define biologically distinct subtypes of major depressive disorder 2026 results,source-level verification and newly found candidates
+6,Predictive value of EEG/ECG Biomarkers for Treatment Response in Depression 2026 results,source-level verification and newly found candidates
+6,Deep learning using electroencephalogram (EEG) data for diagnosing and predicting SSRI response in major depressive disorder results external validation,source-level verification and newly found candidates
+6,Domain-Derived Biomarkers of Treatment Response in Major Depressive Disorder meta-analysis results 2026,source-level verification and newly found candidates
+6,Altered Cytokine Levels in the First Episode of Major Depression and in Antidepressant-Naïve Patients results 2025,source-level verification and newly found candidates
+6,"Treatment resistant depression: A comparative study of access, pathways, and outcomes between Caucasian and ethnic minority individuals results",source-level verification and newly found candidates
+7,treatment resistant depression ontology endotype distinct disease 2026,final saturation sweep
+7,major depressive disorder endotype treatment response external validation August 2026,final saturation sweep
+7,treatment resistant depression pseudoresistance adherence definition 2026,final saturation sweep
+7,depression biomarker guided treatment randomized external validation 2026,final saturation sweep
