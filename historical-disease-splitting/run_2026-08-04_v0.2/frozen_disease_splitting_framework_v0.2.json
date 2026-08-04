@@ -1,0 +1,198 @@
+{
+  "framework_name": "Historical Disease-Splitting Framework",
+  "framework_version": "0.2",
+  "freeze_date": "2026-08-04",
+  "status": "FROZEN_FOR_DOWNSTREAM_TESTING",
+  "parent_version": "0.1",
+  "historical_run": {
+    "total_cases": 40,
+    "inherited_v0_1_cases": 21,
+    "new_v0_2_cases": 19,
+    "accepted_operational_or_emerging_supported": 28,
+    "failed_merged_contested_residual_or_materially_revised": 12,
+    "scope_note": "Expanded purposive historical evidence map and stress test. It is broader than v0.1 but still does not claim exhaustive history-of-medicine coverage."
+  },
+  "changes_from_v0_1": [
+    "Added DIMENSION_OR_SPECTRUM as a legitimate classification outcome.",
+    "Added U08 convergent multi-domain coherence for biological-ontology claims.",
+    "Added U09 positive-definition/residual-category caution.",
+    "Added COMPOSITE_MULTIAXIAL output rule allowing simultaneous subtype, stage, dimension and treatment-state axes.",
+    "Added H07 research-opportunity asymmetry and neglected-population control.",
+    "Added H08 jurisdictional-adoption divergence control.",
+    "Added target-family holdout sensitivity to reduce criterion leakage when a downstream target is closely related to a historical comparator."
+  ],
+  "governing_principles": [
+    "Historical frequency does not by itself create a scientific criterion.",
+    "A candidate criterion is promoted only when it has face validity, scientific coherence, operational meaning and useful discrimination between successful and failed or revised historical divisions.",
+    "Socioeconomic, political, military, technological, institutional, commercial and regulatory factors are controls on discovery, evidence availability and adoption history, not intrinsic evidence of disease ontology.",
+    "Ask separately why a division occurred at a historical moment and whether the division was scientifically valid.",
+    "No single universal score should force distinct diseases, endotypes, dimensions, stages and treatment-response states into the same ontology.",
+    "Clinical utility can validate an operational classification without establishing a separate biological disease.",
+    "Regulatory approval, expert consensus and historical persistence are not sufficient evidence of separate disease ontology.",
+    "Treatment response alone is not sufficient evidence of separate disease ontology; mechanism-aligned differential treatment response is stronger when convergent biology is present.",
+    "A stage is allowed to change over time; longitudinal transition is evidence for a stage rather than a validity failure.",
+    "A dimension or spectrum may be biologically coherent despite lacking a categorical boundary; arbitrary thresholds must not be mistaken for separate diseases.",
+    "A treatment-resistance state must be evaluated after adequate exposure and pseudoresistance assessment.",
+    "Residual categories defined mainly by absence of another subgroup marker remain provisional until positive coherence is demonstrated.",
+    "The same disorder may legitimately carry multiple simultaneous axes: etiologic subtype, mechanistic endotype, stage, dimensional severity and treatment-response state.",
+    "Absence or delay of evidence is opportunity-sensitive: low research investment, limited diagnostics, poor surveillance or concentration in neglected populations can reduce the probability that a true distinction is discovered or replicated.",
+    "If a downstream disease review identifies a missing criterion, it must return an amendment candidate to the historical module; the disease-specific module cannot edit this frozen framework."
+  ],
+  "universal_criteria": [
+    {
+      "id": "U01",
+      "name": "Operationalizable reproducible discriminator",
+      "requirement": "The proposed distinction can be recognized with adequate reliability using defined clinical, pathological, biological or other measurements."
+    },
+    {
+      "id": "U02",
+      "name": "Independent replication and transportability",
+      "requirement": "The distinction is reproduced in genuinely independent study families, settings, populations or methods appropriate to the claim."
+    },
+    {
+      "id": "U03",
+      "name": "Boundary robustness",
+      "requirement": "The distinction is not primarily created by arbitrary thresholds, assay conditions, local measurement practice or unstable symptom dominance. If evidence is continuous, dimensional representation must be explicitly considered."
+    },
+    {
+      "id": "U04",
+      "name": "Temporal coherence",
+      "requirement": "Timing must fit the proposed class: a pre-existing distinct disease cannot be inferred solely from post-treatment findings; a stage must show longitudinal ordering; a resistance state must follow adequate treatment exposure."
+    },
+    {
+      "id": "U05",
+      "name": "Specificity beyond alternatives",
+      "requirement": "The distinction must be evaluated against severity, duration, treatment exposure, adherence, comorbidity, diagnostic error, environmental and socioeconomic conditions, access to care, measurement artefact and other plausible explanations."
+    },
+    {
+      "id": "U06",
+      "name": "Natural-history or longitudinal coherence",
+      "requirement": "The proposed class should show a course pattern appropriate to its ontology. Absence does not automatically reject a molecular subtype but weakens a claim of separate disease."
+    },
+    {
+      "id": "U07",
+      "name": "Clinical decision utility",
+      "requirement": "Determine whether classification improves prevention, prognosis, treatment selection, avoidance of ineffective treatment, trial design or another decision. Utility supports adoption but does not prove ontology."
+    },
+    {
+      "id": "U08",
+      "name": "Convergent multi-domain coherence",
+      "applies_to": "Claims of biological disease, biological subtype or mechanistic endotype",
+      "requirement": "Strong ontological claims should generally converge across independent evidence domains such as etiology, pathology, genetics, physiology, natural history or mechanism-linked treatment response. A single marker or threshold is insufficient unless it has unusually strong causal specificity and independent validation."
+    },
+    {
+      "id": "U09",
+      "name": "Positive-definition and residual-category caution",
+      "applies_to": "Subgroups defined substantially by absence of another subgroup feature",
+      "requirement": "A residual category such as marker-negative, non-A or not-otherwise-specified should not be promoted to a separate disease or endotype solely because the complementary group is coherent. The residual group requires positive reproducible defining features or must remain heterogeneous/provisional."
+    }
+  ],
+  "classification_specific_criteria": {
+    "DISTINCT_DISEASE": {
+      "required": ["U01", "U02", "U03", "U04", "U05"],
+      "strongly_expected": ["U06", "U08"],
+      "conditional": ["U09 if residual definition is used"],
+      "additional_gate": "At least one strong intrinsic etiologic, pathological, genetic or stable mechanistic discriminator consistent with D01; objective biological testing and longitudinal coherence provide strong additional support.",
+      "criteria": [
+        {"id": "D01", "name": "Intrinsic etiologic/pathological/genetic/stable mechanistic distinction", "role": "CORE"},
+        {"id": "D02", "name": "Objective biological test or reproducible pathology", "role": "STRONG_SUPPORT"}
+      ],
+      "insufficient_alone": ["different treatment response", "regulatory indication", "expert consensus", "historical persistence", "different severity", "new technology availability"]
+    },
+    "BIOLOGICAL_SUBTYPE_OR_ENDOTYPE": {
+      "required": ["U01", "U02", "U03", "U04", "U05", "E01"],
+      "strongly_expected": ["U08"],
+      "conditional": ["U09 if marker-negative or residual subgroup"],
+      "criteria": [
+        {"id": "E01", "name": "Reproducible biological pathway/endotype coherence", "role": "CORE"},
+        {"id": "E02", "name": "Mechanism-linked treatment-by-subgroup interaction", "role": "STRONG_SUPPORT"}
+      ],
+      "note": "Overlap and incomplete membership stability may be compatible with an endotype if the biology is reproducible and clinically meaningful."
+    },
+    "DIMENSION_OR_SPECTRUM": {
+      "required": ["U01", "U02", "U04", "U05", "Q01", "Q02"],
+      "criteria": [
+        {"id": "Q01", "name": "Reproducible ordered gradient", "role": "CORE", "requirement": "Clinical, pathological, biological or functional features vary coherently along an ordered continuum or spectrum."},
+        {"id": "Q02", "name": "Threshold transparency", "role": "CORE", "requirement": "Any cut-points used for treatment or communication are acknowledged as operational unless evidence supports a natural discontinuity."},
+        {"id": "Q03", "name": "Mechanistic gradient or monotonic outcome relation", "role": "STRONG_SUPPORT"}
+      ],
+      "note": "A scientifically coherent continuum is a valid result and should not be forced into artificial categorical diseases."
+    },
+    "DISEASE_STAGE": {
+      "required": ["U01", "U02", "U04", "U05", "S01"],
+      "criteria": [
+        {"id": "S01", "name": "Demonstrable longitudinal transition or time ordering", "role": "CORE"}
+      ],
+      "note": "Movement between stages is expected. Biological separators strengthen but are not mandatory for a useful stage classification. Not every earlier stage must progress to a later stage."
+    },
+    "TREATMENT_RESPONSE_STATE": {
+      "required": ["U01", "U02", "U04", "R01", "R02"],
+      "criteria": [
+        {"id": "R01", "name": "Standardized adequate treatment exposure before resistance assignment", "role": "CORE"},
+        {"id": "R02", "name": "Pseudoresistance, exposure, adherence and system causes assessed", "role": "CORE"},
+        {"id": "R03", "name": "Objective resistance mechanism or reproducible post-exposure biology", "role": "STRONG_SUPPORT"}
+      ],
+      "note": "An objective resistance assay is ideal when biologically available, but absence of such an assay does not invalidate a clinically useful resistance state if exposure and outcome are rigorously established."
+    },
+    "OPERATIONAL_CLINICAL_CATEGORY": {
+      "required": ["U01", "U07", "O01"],
+      "criteria": [
+        {"id": "O01", "name": "Reliable and useful standardization despite absent biological separator", "role": "CORE"}
+      ],
+      "note": "This category must be explicitly described as operational and must not be promoted to biological ontology by consensus or regulation alone."
+    }
+  },
+  "composite_multiaxial_rule": {
+    "id": "M01",
+    "rule": "Do not force one mutually exclusive final category when evidence supports orthogonal axes. A condition may simultaneously be a distinct disease with molecular subtypes, a longitudinal stage system, a dimensional severity axis and a treatment-response state.",
+    "examples_from_history": ["CML disease identity plus chronic/blast phase plus TKI-resistance states", "cancer molecular subtype plus anatomical stage", "leprosy immunological spectrum plus acute reaction states"]
+  },
+  "historical_context_controls": [
+    {"id": "H01", "name": "Expert consensus/regulatory recognition", "use": "Historical adoption marker only; never intrinsic ontology proof."},
+    {"id": "H02", "name": "Duration/persistence of classification", "use": "Historical observation only; persistence may represent validity or inertia."},
+    {"id": "H03", "name": "War, political stability, national/global economic conditions", "use": "Explain opportunity, suppression, urgency and timing; never intrinsic disease evidence."},
+    {"id": "H04", "name": "Research funding, institutional capacity and technology availability", "use": "Control whether a distinction was observable, testable and replicable at that time."},
+    {"id": "H05", "name": "Commercial, reimbursement, advocacy and regulatory incentives", "use": "Control translation, adoption and differential investment across candidate subgroups."},
+    {"id": "H06", "name": "Prestige, authority, professional structure and institutional competition", "use": "Bias flag for classification creation or persistence independent of evidence."},
+    {"id": "H07", "name": "Research-opportunity asymmetry and neglected populations", "use": "When a condition is concentrated in underfunded countries or populations with limited diagnostics, surveillance or commercial incentives, delayed or sparse evidence must not be interpreted as evidence of biological absence. This control lowers confidence in negative historical inference but does not create positive evidence."},
+    {"id": "H08", "name": "Jurisdictional adoption divergence", "use": "Country-, society- or regulator-specific classification decisions must be recorded separately. Adoption in one jurisdiction may reflect reimbursement, service organization or local evidence rather than universal ontology."}
+  ],
+  "context_attribution_labels": [
+    "SCIENCE_DOMINANT",
+    "SCIENCE_MAJOR_CONTEXT_ENABLED",
+    "MIXED_SCIENCE_AND_CONTEXT",
+    "CONTEXT_MAJOR_FOR_TIMING_SCIENCE_VALIDATED",
+    "CONTEXT_MAJOR_SUPPRESSIVE_SCIENCE_VALIDATED",
+    "CONTEXT_OR_OPERATIONAL_MAJOR",
+    "RESEARCH_OPPORTUNITY_CONSTRAINED",
+    "JURISDICTIONALLY_DIVERGENT",
+    "INDETERMINATE"
+  ],
+  "context_adjusted_inference_rules": [
+    "Historical timing is not a proxy for biological distinctness.",
+    "A lack of historical research can reduce confidence in a negative conclusion when opportunity was poor, but it cannot be converted into positive evidence for a split.",
+    "A country-specific classification change is evidence of adoption, not automatically evidence of biological validity.",
+    "Technology can reveal either true or false distinctions; technology availability is therefore an opportunity variable rather than proof.",
+    "Commercial or treatment incentives may accelerate a valid split or promote an unstable one; adjudicate scientific evidence independently."
+  ],
+  "target_family_holdout_rule": {
+    "id": "TFH01",
+    "purpose": "Reduce circularity/criterion leakage when the downstream target is closely related to a historical comparator used in derivation.",
+    "procedure": "Run the disease-specific adjudication with the full v0.2 framework and repeat a sensitivity analysis after excluding historical cases from the same disorder family or very close nosological neighborhood. Report whether criterion interpretation or final classification changes.",
+    "example": "A schizophrenia-specific review should report a sensitivity analysis that does not rely on HIST008 or HIST035 as evidence for deriving the judging criteria."
+  },
+  "downstream_outputs_required": [
+    "criterion_by_criterion_target_evidence",
+    "all_relevant_evidence_result",
+    "higher_confidence_result",
+    "restriction_sensitivity_delta",
+    "classification_specific_adjudication",
+    "dimension_or_spectrum_test",
+    "composite_multiaxial_test",
+    "residual_category_test_if_applicable",
+    "contextual_confounding_analysis",
+    "target_family_holdout_sensitivity_if_applicable",
+    "criteria_amendment_candidates_if_any"
+  ],
+  "amendment_rule": "Any further change creates a new framework version. A target disorder must be rerun under the original and amended versions if the amendment could change a central conclusion."
+}
