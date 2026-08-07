@@ -1,0 +1,50 @@
+{
+  "run_id": "executive_working_memory_common_seed_2026-08-07",
+  "date": "2026-08-07",
+  "serial_execution": true,
+  "feed_forward_rule": "The surviving hypotheses, contradictions, unresolved discriminators, and source gaps from family N are mandatory input to family N+1.",
+  "novelty_rule": "After the final conceptual reset, count a family as materially novel only if it changes the operational seed, causal architecture, temporal ordering, cross-scale translation, or viability of a competing explanation. Additional papers that only support an existing branch do not reset the final conceptual saturation streak.",
+  "stopping_rule": {
+    "minimum_consecutive_zero_material_families": 3,
+    "final_zero_material_streak": 3,
+    "evidence_family_status": "SATURATION_CANDIDATE",
+    "full_institute_status": "PENDING_MODEL_DIVERSITY_AND_CHINA_GREY_LITERATURE"
+  },
+  "final_seed": {
+    "name": "task_relevant_representation_fidelity",
+    "definition": "Stability/fidelity of a task-relevant neural representation across load, delay, and interference in PFC-centered executive networks.",
+    "primary_clinical_expression": "working_memory_and_executive_function",
+    "disease_role": "modifier_not_anchor"
+  },
+  "families": [
+    {"id":"F01","name":"cross_disorder_clinical_phenotype","input":"global cognitive decline","output":"working memory and executive control are the strongest transdiagnostic phenotype","material":true,"reset":false},
+    {"id":"F02","name":"anatomy_DLPFC_frontoparietal","input":"WM/EF phenotype","output":"regional/circuit specificity; no uniform whole-brain insulin resistance","material":true,"reset":false},
+    {"id":"F03","name":"china_human_IGF_cohorts","input":"PFC executive phenotype plus insulin/IGF","output":"Chinese IGF1/IGF2 cohorts track executive/working-memory measures; genetic association can be null","material":true,"reset":false},
+    {"id":"F04","name":"NIH_grants_working_memory_and_insulin","input":"clinical and molecular bridge","output":"working-memory circuit and insulin/IGF grant portfolios are scientifically adjacent but often siloed","material":true,"reset":false},
+    {"id":"F05","name":"china_causal_PFC_IGFBP2","input":"human associations","output":"PFC IGFBP2 perturbation links trophic signaling to synaptic dysfunction and cognition with rescue","material":true,"reset":false},
+    {"id":"F06","name":"AKT_GSK3_convergence","input":"insulin trophic model","output":"insulin/IGF converges with dopamine, BDNF, NMDA and disease pathways; insulin is not the unique molecular seed","material":true,"reset":false},
+    {"id":"F07","name":"null_and_contradiction","input":"simple trophic deficiency model","output":"negative/heterogeneous insulin findings reject monotonic deficiency model","material":true,"reset":false},
+    {"id":"F08","name":"china_language_ChiCTR_NSFC_oriented","input":"English-indexed evidence","output":"China-specific sources materially expand the evidence landscape and must be first-class search sources","material":true,"reset":false},
+    {"id":"F09","name":"astrocytes_and_BBB","input":"primarily neuronal model","output":"astrocytic IGF signaling and energy handling causally affect working memory; support layer becomes core","material":true,"reset":true},
+    {"id":"F10","name":"pericyte_endothelial_support","input":"expanded support model","output":"neurovascular trophic support fits the expanded architecture; endothelial InsR null evidence prevents single-compartment claims","material":false,"reset":false},
+    {"id":"F11","name":"single_cell_spatial_omics","input":"cell/support architecture","output":"adds cell/layer/stage resolution without new causal class","material":false,"reset":false},
+    {"id":"F12","name":"china_perioperative_insulin_interventions","input":"chronic cognitive-decline framework","output":"acute externally timed cognitive injury can be modified by intranasal insulin in several Chinese trials; translational branch added","material":true,"reset":false},
+    {"id":"F13","name":"white_matter_adaptive_myelin","input":"local microcircuit model","output":"PFC-centered executive function also depends on activity-dependent myelination and long-range conduction","material":true,"reset":true},
+    {"id":"F14","name":"working_memory_neural_implementation","input":"persistent firing candidate seed","output":"persistent firing is too narrow; seed becomes representation stability/fidelity under load, delay and interference","material":true,"reset":true},
+    {"id":"F15","name":"cross_disorder_oscillatory_coordination","input":"representation-fidelity seed","output":"theta/gamma/frontoparietal coordination generalizes as a candidate physiological readout across multiple disorders","material":true,"reset":false},
+    {"id":"F16","name":"insulin_to_network_physiology","input":"parallel insulin and oscillation literatures","output":"insulin can modify hippocampal-PFC coordination selectively; oscillatory effects are not universal","material":true,"reset":false},
+    {"id":"F17","name":"human_insulin_challenge","input":"animal network bridge","output":"human insulin challenge can alter task-related activation/connectivity and some executive outcomes","material":true,"reset":false},
+    {"id":"F18","name":"alternative_trophic_systems","input":"final representation-stability architecture","output":"BDNF, NRG/ErbB, dopamine and NMDA converge on the same architecture; no new core class","material":false,"final_zero_streak_index":1},
+    {"id":"F19","name":"metabolic_support_challenge","input":"final representation-stability architecture","output":"astrocyte metabolism, mitochondria, lactate, kynurenine and glucose fit the existing energetic-support layer","material":false,"final_zero_streak_index":2},
+    {"id":"F20","name":"modifier_challenge_age_sex_APOE_sleep_stress_exercise","input":"final representation-stability architecture","output":"modifiers shift resilience/set point without changing seed, causal architecture or cross-scale translation","material":false,"final_zero_streak_index":3}
+  ],
+  "limitations": {
+    "independent_LLM_families_completed": 1,
+    "required_independent_LLM_families": 3,
+    "china_public_web_coverage": "partial",
+    "CNKI_direct_comprehensive_search": false,
+    "Wanfang_direct_comprehensive_search": false,
+    "NSFC_direct_comprehensive_award_search": false,
+    "rule": "Do not label the run full scientific saturation until independent model-family validation and prioritized inaccessible-source audits are completed."
+  }
+}
