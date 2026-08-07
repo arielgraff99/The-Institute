@@ -1,0 +1,123 @@
+{
+  "config_version": "1.0.0",
+  "seed_id": "representation_fidelity_exec_wm_v1",
+  "name": "Task-relevant representation fidelity under load, delay, and interference",
+  "operational_definition": "The capacity of a PFC-centered distributed neural system to encode, maintain, update, protect, and use a task-relevant representation with sufficient fidelity despite increasing information load, elapsed delay, competing information, or context change.",
+  "primary_human_domain": "executive_working_memory_function",
+  "primary_operations": [
+    "encoding_and_consolidation",
+    "maintenance",
+    "updating",
+    "manipulation",
+    "interference_resistance",
+    "inhibitory_control",
+    "set_shifting",
+    "goal_maintenance"
+  ],
+  "recommended_behavioral_parameters": [
+    "accuracy_or_d_prime",
+    "capacity_K",
+    "reaction_time_with_speed_separated_from_accuracy",
+    "load_slope",
+    "delay_slope",
+    "interference_cost",
+    "consolidation_rate",
+    "trial_to_trial_variability",
+    "error_type"
+  ],
+  "candidate_human_tasks": [
+    "n_back",
+    "delayed_match_or_nonmatch_to_sample",
+    "change_detection",
+    "letter_number_sequencing",
+    "backward_span",
+    "AX_CPT_or_goal_maintenance_tasks",
+    "Stroop_or_response_inhibition",
+    "task_switching",
+    "Trail_Making_B_with_processing_speed_adjustment"
+  ],
+  "anatomy": [
+    "dorsolateral_prefrontal_cortex",
+    "medial_prefrontal_cortex",
+    "anterior_cingulate_cortex",
+    "posterior_parietal_cortex",
+    "hippocampal_CA1_subiculum",
+    "mediodorsal_and_reuniens_thalamus",
+    "dorsal_striatum_caudate"
+  ],
+  "network_readouts": [
+    "multivariate_representational_decoding",
+    "frontoparietal_connectivity",
+    "PFC_hippocampal_coordination",
+    "PFC_thalamic_coordination",
+    "theta_power_and_phase_coordination",
+    "gamma_synchrony",
+    "theta_gamma_coupling",
+    "sharp_wave_ripple_coordination_when_relevant",
+    "effective_connectivity",
+    "network_state_stability"
+  ],
+  "cellular_and_circuit_support_layers": [
+    "pyramidal_cell_synaptic_integrity",
+    "PV_and_SST_interneuron_control",
+    "excitation_inhibition_balance",
+    "receptor_trafficking_and_plasticity",
+    "astrocytic_energy_and_metabolic_support",
+    "microglial_homeostatic_and_inflammatory_state",
+    "endothelial_and_pericyte_delivery_support",
+    "oligodendrocyte_OPC_and_adaptive_myelination",
+    "mitochondrial_function"
+  ],
+  "insulin_IGF_regulatory_axes": {
+    "ligands": ["insulin", "IGF1", "IGF2"],
+    "binding_regulators": ["IGFBP2", "IGFBP3", "other_IGFBPs_as_discovered"],
+    "receptors": ["INSR", "IGF1R", "IR_IGF1R_hybrid_receptors"],
+    "proximal_branches": ["IRS1", "IRS2"],
+    "downstream_nodes": ["PI3K", "AKT", "GSK3B", "mTOR", "FOXO", "ERK_MAPK"],
+    "transport_layer": ["BBB_insulin_transport", "endothelial_receptor_kinetics", "regional_ligand_access"],
+    "interpretation_rule": "Do not infer pathology from high or low basal signaling alone. Prefer dynamic ligand-response measurements and preserve ligand, receptor, IRS branch, cell type, region, and disease stage."
+  },
+  "competing_final_models": [
+    {
+      "id": "H1",
+      "name": "representation_stability_trophic_homeostasis",
+      "prediction": "Different disorders converge on failure of cellular and circuit homeostasis required to preserve task representations; insulin/IGF is one major regulator of this homeostasis."
+    },
+    {
+      "id": "H2",
+      "name": "disease_specific_entry_common_downstream_phenotype",
+      "prediction": "Distinct upstream insults converge on the same executive-network representation-fidelity phenotype through partly different molecular routes."
+    },
+    {
+      "id": "H3",
+      "name": "feedback_amplification",
+      "prediction": "Primary pathology can induce insulin/IGF dysregulation, which then amplifies synaptic/network instability; direction and magnitude vary by stage and compartment."
+    },
+    {
+      "id": "H4",
+      "name": "insulin_IGF_epiphenomenon",
+      "prediction": "Insulin/IGF changes track network failure without materially mediating it; causal rescue should fail after controlling the primary disease process."
+    }
+  ],
+  "strong_causal_test": [
+    "define_upstream_perturbation",
+    "measure_dynamic_insulin_IGF_response_in_defined_region_and_cell_type",
+    "measure_synaptic_EI_metabolic_and_myelin_support",
+    "measure_representation_fidelity_under_load_delay_interference",
+    "measure_homologous_executive_working_memory_behavior",
+    "manipulate_insulin_IGF_pathway",
+    "perform_rescue_or_reversal",
+    "establish_temporal_order"
+  ],
+  "source_expansion_priority": {
+    "china": ["CNKI", "Wanfang", "SinoMed_CBM", "ChiCTR", "NSFC", "Chinese_university_repositories", "Chinese_theses"],
+    "grants": ["NIH_RePORTER", "NSFC", "CIHR", "EU_CORDIS", "UKRI", "Wellcome", "NHMRC"],
+    "trials": ["ClinicalTrials.gov", "ChiCTR", "WHO_ICTRP_when_accessible"],
+    "literature": ["PubMed", "OpenAlex", "Crossref", "citation_forward_backward", "corrections_retractions"]
+  },
+  "saturation": {
+    "conceptual_zero_material_family_streak": 3,
+    "evidence_family_status": "SATURATION_CANDIDATE",
+    "full_institute_status": "PENDING_INDEPENDENT_MODEL_FAMILIES_AND_CHINA_GREY_LITERATURE"
+  }
+}
