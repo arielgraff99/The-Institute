@@ -1,0 +1,136 @@
+{
+  "config_version": "1.0.0",
+  "override_type": "cross_scale_phenotype_addendum",
+  "phenotype_anchor": {
+    "name": "executive_working_memory_function",
+    "primary_subdomains": [
+      "working_memory_maintenance",
+      "working_memory_updating",
+      "working_memory_manipulation",
+      "inhibitory_control",
+      "set_shifting",
+      "cognitive_flexibility",
+      "planning",
+      "goal_maintenance",
+      "interference_control"
+    ],
+    "secondary_domains": ["attention", "processing_speed"],
+    "rule": "Disease diagnosis is a modifier; the conserved phenotype is the anchor."
+  },
+  "cross_species_levels": [
+    "human_behavior",
+    "human_network_anatomy",
+    "human_regional_tissue",
+    "animal_behavior",
+    "animal_circuit",
+    "animal_regional_tissue",
+    "cellular_model",
+    "organoid_or_assembloid",
+    "molecular_pathway"
+  ],
+  "anatomical_core": {
+    "primary_regions": [
+      "dorsolateral_prefrontal_cortex",
+      "medial_prefrontal_cortex",
+      "anterior_cingulate_cortex",
+      "posterior_parietal_cortex",
+      "hippocampal_CA1_subiculum",
+      "mediodorsal_and_reuniens_thalamus",
+      "dorsal_striatum_and_caudate"
+    ],
+    "network_constructs": [
+      "frontoparietal_control_network",
+      "prefrontal_hippocampal_network",
+      "prefrontal_thalamic_network",
+      "frontostriatal_network",
+      "salience_control_interface"
+    ]
+  },
+  "cell_types": [
+    "excitatory_pyramidal_neurons",
+    "parvalbumin_interneurons",
+    "somatostatin_interneurons",
+    "astrocytes",
+    "microglia",
+    "oligodendrocytes",
+    "endothelial_cells",
+    "pericytes"
+  ],
+  "animal_model_translation": {
+    "required": true,
+    "behavioral_tasks": [
+      "delayed_alternation",
+      "T_maze_or_Y_maze_working_memory",
+      "radial_arm_working_memory",
+      "delayed_nonmatch_to_sample",
+      "set_shifting",
+      "reversal_learning",
+      "five_choice_serial_reaction_time",
+      "attentional_set_shift",
+      "response_inhibition_tasks"
+    ],
+    "circuit_methods": [
+      "electrophysiology",
+      "calcium_imaging",
+      "optogenetics",
+      "chemogenetics",
+      "tract_tracing",
+      "functional_imaging",
+      "region_specific_insulin_or_IGF_challenge"
+    ]
+  },
+  "cell_model_translation": {
+    "required": true,
+    "preferred_models": [
+      "patient_derived_iPSC_neurons",
+      "isogenic_CRISPR_models",
+      "prefrontal_cortical_neurons",
+      "GABAergic_interneurons",
+      "astrocyte_neuron_coculture",
+      "microglia_neuron_coculture",
+      "endothelial_neurovascular_models",
+      "cortical_organoids",
+      "cortico_thalamic_or_cortico_striatal_assembloids"
+    ],
+    "functional_readouts": [
+      "insulin_stimulated_INSR_phosphorylation",
+      "IRS1_IRS2_state",
+      "PI3K_AKT_response",
+      "GSK3B_mTOR_FOXO_response",
+      "synapse_density",
+      "dendritic_spine_or_neurite_metrics",
+      "network_synchrony",
+      "gamma_band_related_activity",
+      "mitochondrial_function",
+      "glucose_utilization",
+      "cell_survival",
+      "plasticity_related_gene_expression"
+    ]
+  },
+  "translation_rule": "Do not claim cross-species equivalence from task labels alone. Require construct mapping between behavioral operation, circuit, region, cell type and molecular readout.",
+  "required_cross_scale_matrix_columns": [
+    "disorder_or_model",
+    "species",
+    "phenotype_subdomain",
+    "task_or_assay",
+    "brain_region",
+    "network",
+    "cell_type",
+    "insulin_or_IGF_measure",
+    "functional_response",
+    "temporal_position",
+    "causal_manipulation",
+    "rescue_experiment",
+    "direction_of_effect",
+    "study_family_id",
+    "confidence"
+  ],
+  "required_outputs": [
+    "executive_working_memory_cross_species_matrix.csv",
+    "anatomy_network_map.csv",
+    "region_cell_insulin_map.csv",
+    "animal_model_translation_matrix.csv",
+    "cell_model_translation_matrix.csv",
+    "cross_scale_causal_chain.csv"
+  ]
+}
